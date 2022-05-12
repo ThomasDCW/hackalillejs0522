@@ -5,6 +5,7 @@ import Avatar from "@components/Avatar";
 import Inventory from "@components/Inventory";
 import Timer from "@components/Timer";
 import GlobalStyle from "./style";
+import Footer from "@components/Footer";
 import { Reset } from "styled-reset";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Avatar />
           </section>
         </main>
+        <Footer />
       </GlobalStyle>
     </div>
   );
