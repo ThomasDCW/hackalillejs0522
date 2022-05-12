@@ -7,4 +7,11 @@ export default styled.section`
     display: flex;
     justify-content: space-between;
   }
+  .maincontainer {
+    width: 100%;
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 `;
