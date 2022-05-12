@@ -12,8 +12,6 @@ export function StatsContext({ children }) {
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [realeState, setRealeState] = useState(0);
 
-  console.log(realeState);
-
   useInterval(() => {
     if (timerActif) setTimer((prevState) => prevState + 1);
   }, 5000);
