@@ -1,9 +1,11 @@
-import "./App.css";
+import Header from "@components/Header";
+import reset, { Reset } from "styled-reset";
 
 function App() {
   return (
     <div className="App">
-      <p>coucou</p>
+      <Reset />
+      <Header />
     </div>
   );
 }
