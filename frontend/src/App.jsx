@@ -1,5 +1,7 @@
 import Header from "@components/Header";
 import Card from "@components/Card";
+import Wallet from "@components/Wallet";
+import Avatar from "@components/Avatar";
 import { Reset } from "styled-reset";
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <main>
         <Card />
+        <Wallet />
+        <Avatar />
       </main>
     </div>
   );
