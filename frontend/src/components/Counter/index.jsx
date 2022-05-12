@@ -4,6 +4,7 @@ export default function Wallet() {
   return (
     <SCounter>
       <h1>1.000.000 €</h1>
+      <h1>PLANETE</h1>
     </SCounter>
   );
 }
