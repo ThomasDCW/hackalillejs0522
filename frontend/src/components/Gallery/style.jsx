@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
 export default styled.section`
-  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 `;

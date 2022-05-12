@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export default styled.div`
-  margin-top: 4vh;
-  margin-left: 4vw;
-  margin-right: 4vw;
-  height: 8vh;
-  width: 60vh;
-  background-color: gold;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 4px 0px 0px #000000;
   img {
-    max-width: 200px;
-    width: 5vw;
+    height: 120px;
+    margin-right: 4vw;
   }
   .hideTimer {
     display: none;

@@ -1,13 +1,15 @@
 import STimer from "./style";
 import timerImg from "../../assets/timer.png";
-// import context from "../../../context/Ctx";
-
-export default function Wallet() {
-  const timerActif = true; // à remplacer par donnée du contexte
+import context from "../../services/contexts/index";
+import { useContext } from "react";
+export default function Timer() {
+  const { timer, timerActif } = useContext(context);
   return (
     <STimer>
       <img src={timerImg} />
-      <p className={timerActif ? "showTimer" : "hideTimer"}>00:05</p>
+      <p className={timerActif ? "showTimer" : "hideTimer"}>
+        Année en cours : {timer}
+      </p>
     </STimer>
   );
 }

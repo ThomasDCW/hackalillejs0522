@@ -1,5 +1,10 @@
 import SCounter from "./style";
+import { useContext } from "react";
+import statsContext from "@services/contexts";
 
 export default function Wallet() {
-  return <SCounter>I'm the Counter</SCounter>;
+
+  const { money } = useContext(statsContext);
+
+  return <SCounter>{money}</SCounter>;
 }

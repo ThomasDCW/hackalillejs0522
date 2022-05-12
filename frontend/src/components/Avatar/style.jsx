@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export default styled.div`
-  height: 40vh;
-  background-color: violet;
+  background-color: #423e42;
+  background-repeat: no-repeat;
 `;

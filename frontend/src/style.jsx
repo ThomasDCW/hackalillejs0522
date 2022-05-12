@@ -1,17 +1,11 @@
 import styled from "styled-components";
 
 export default styled.section`
-  min-height: 100vh;
+  font-family: "Roboto", "Andika New Basic", sans-serif;
+  background-color: #fbb7a2;
 
-  main {
+  .stats {
     display: flex;
     justify-content: space-between;
-  }
-  .maincontainer {
-    width: 100%;
-    div {
-      display: flex;
-      justify-content: space-between;
-    }
   }
 `;
