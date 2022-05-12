@@ -7,5 +7,9 @@ export default styled.div`
     background-color: #585ad4;
     color: white;
     border-radius: 10%;
+    margin: 0.5em;
+  }
+  .hide {
+    opacity: 10%;
   }
 `;

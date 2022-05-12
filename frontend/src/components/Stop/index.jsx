@@ -3,10 +3,12 @@ import { useContext } from "react";
 import StatsContext from "../../services/contexts/index";
 
 export default function Stop() {
-  const { reset } = useContext(StatsContext);
+  const { reset, timerActive } = useContext(StatsContext);
   return (
     <SStop>
-      <button onClick={reset}>Stop</button>
+      <button className={timerActive ? "show" : "hideS"} onClick={reset}>
+        Stop
+      </button>
     </SStop>
   );
 }

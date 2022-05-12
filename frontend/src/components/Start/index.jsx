@@ -3,10 +3,11 @@ import { useContext } from "react";
 import StatsContext from "../../services/contexts/index";
 
 export default function Start() {
-  const { setTimerActive } = useContext(StatsContext);
+  const { timerActive, setTimerActive } = useContext(StatsContext);
   return (
     <SStart>
       <button
+        className={timerActive ? "hide" : "show"}
         onClick={() => {
           setTimerActive(true);
         }}
