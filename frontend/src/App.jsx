@@ -6,27 +6,30 @@ import Inventory from "@components/Inventory";
 import Timer from "@components/Timer";
 import GlobalStyle from "./style";
 import { Reset } from "styled-reset";
+import { StatsContext } from "./services/contexts/index";
 
 function App() {
   return (
     <div className="App">
-      <Reset />
-      <GlobalStyle>
-        <Header />
-        <main>
-          <section className="maincontainer">
-            <Gallery />
-            <div>
-              <Timer />
-              <Counter />
-            </div>
-          </section>
-          <section className="sideContainer">
-            <Inventory />
-            <Avatar />
-          </section>
-        </main>
-      </GlobalStyle>
+      <StatsContext>
+        <Reset />
+        <GlobalStyle>
+          <Header />
+          <main>
+            <section className="maincontainer">
+              <Gallery />
+              <div>
+                <Timer />
+                <Counter />
+              </div>
+            </section>
+            <section className="sideContainer">
+              <Inventory />
+              <Avatar />
+            </section>
+          </main>
+        </GlobalStyle>
+      </StatsContext>
     </div>
   );
 }
