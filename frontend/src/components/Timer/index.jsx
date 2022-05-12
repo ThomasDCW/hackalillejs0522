@@ -7,7 +7,9 @@ export default function Timer() {
   return (
     <STimer>
       <img src={timerImg} />
-      <p className={timerActif ? "showTimer" : "hideTimer"}>{timer}</p>
+      <p className={timerActif ? "showTimer" : "hideTimer"}>
+        Année en cours : {timer}
+      </p>
     </STimer>
   );
 }
