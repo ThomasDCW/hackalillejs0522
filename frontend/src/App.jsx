@@ -17,9 +17,9 @@ function App() {
             <Gallery />
           </section>
           <section className="stats">
-            <Timer />
+            <Counter />
             <div>
-              <Counter />
+              <Timer />
               <Avatar />
             </div>
           </section>

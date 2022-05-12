@@ -2,7 +2,7 @@ import STimer from "./style";
 import timerImg from "../../assets/timer.png";
 // import context from "../../../context/Ctx";
 
-export default function Wallet() {
+export default function Timer() {
   const timerActif = true; // à remplacer par donnée du contexte
   return (
     <STimer>
