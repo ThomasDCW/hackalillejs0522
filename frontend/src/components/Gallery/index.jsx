@@ -8,6 +8,7 @@ export default function Gallery() {
       {datas.map((data) => {
         return (
           <Card
+            key={data.nom}
             nom={data.nom}
             profit={data.profit}
             impact_ecologique={data.impact_ecologique}
