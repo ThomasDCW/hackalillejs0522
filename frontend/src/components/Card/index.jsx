@@ -6,6 +6,13 @@ import { useState } from "react";
 export default function Card(props) {
   const { money, setMoney } = useContext(statsContext);
   const [nb, setNb] = useState(0);
+  function nbAchat() {
+    if (nb < 0) {
+      return setNb(0);
+    } else {
+      return nb;
+    }
+  }
 
   const incrementMoney = () => setMoney(money + props.cout_achat);
   const deIncrementMoney = () => setMoney(money - props.cout_achat);
@@ -20,7 +27,10 @@ export default function Card(props) {
         <li>
           <button
             onClick={() => {
-              deIncrementMoney();
+              if (nb === 0) {
+                return setMoney(money);
+              }
+              incrementMoney();
               setNb(nb - 1);
             }}
           >
@@ -28,13 +38,13 @@ export default function Card(props) {
           </button>
           <button
             onClick={() => {
-              incrementMoney();
+              deIncrementMoney();
               setNb(nb + 1);
             }}
           >
             +
           </button>
-          <p>{nb}</p>
+          <p>{nbAchat()}</p>
         </li>
       </ul>
       <img src={props.image} alt="img" />
