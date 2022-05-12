@@ -16,6 +16,7 @@ export default function Gallery() {
             superficie={data.superficie}
             production={data.production}
             image={data.image}
+            realeState={data.realeState}
           />
         );
       })}
