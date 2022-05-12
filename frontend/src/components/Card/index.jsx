@@ -2,9 +2,11 @@ import SCard from "./style";
 import { useContext } from "react";
 import statsContext from "@services/contexts";
 import { useState } from "react";
+import useInterval from "./../../services/contexts/useInterval";
 
 export default function Card(props) {
   const { money, setMoney } = useContext(statsContext);
+
   const [nb, setNb] = useState(0);
   function nbAchat() {
     if (nb < 0) {
@@ -13,9 +15,16 @@ export default function Card(props) {
       return nb;
     }
   }
+  useInterval(() => {
+    setMoney(money + props.profit * nb);
+  }, 5000);
 
-  const incrementMoney = () => setMoney(money + props.cout_achat);
-  const deIncrementMoney = () => setMoney(money - props.cout_achat);
+  const incrementMoney = () => {
+    setMoney(money + props.cout_achat);
+  };
+  const deIncrementMoney = () => {
+    setMoney(money - props.cout_achat);
+  };
 
   return (
     <SCard>
