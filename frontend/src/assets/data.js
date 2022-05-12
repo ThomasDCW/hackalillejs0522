@@ -1,13 +1,12 @@
-import avocat from "./avocat.jpg";
-import mais from "./mais.jpg";
-import volaille from "./volaille.jpg";
-import boeuf from "./boeuf.jpg";
-import fraise from "./fraise.jpg";
-import porc from "./porc.jpg";
+import avocat from "@assets/avocat.png";
+import mais from "@assets/mais.png";
+import volaille from "@assets/volaille.png";
+import boeuf from "@assets/boeuf.png";
+import fraise from "@assets/fraise.png";
+import porc from "@assets/porc.png";
 
 /*toute les unitées sont à la tonne */
-
-[
+const datas = [
   {
     nom: "Champ d'avocat",
     profit: 17000,
@@ -71,3 +70,4 @@ import porc from "./porc.jpg";
     production: 9,
   },
 ];
+export default datas;
