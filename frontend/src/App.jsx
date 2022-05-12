@@ -10,24 +10,23 @@ import { StatsContext } from "./services/contexts/index";
 function App() {
   return (
     <div className="App">
-      <StatsContext>
-        <Reset />
-        <GlobalStyle>
-          <Header />
-          <main>
-            <section className="gallery">
-              <Gallery />
-            </section>
-            <section className="stats">
+      <Reset />
+      <GlobalStyle>
+        <Header />
+        <main>
+          <section className="gallery">
+            <Gallery />
+          </section>
+          <section className="stats">
+            <Counter />
+            <div>
               <Timer />
-              <div>
-                <Counter />
-                <Avatar />
-              </div>
-            </section>
-          </main>
-        </GlobalStyle>
-      </StatsContext>
+              <Avatar />
+            </div>
+          </section>
+        </main>
+      </GlobalStyle>
+
     </div>
   );
 }
