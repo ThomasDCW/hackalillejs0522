@@ -5,6 +5,8 @@ import Avatar from "@components/Avatar";
 import Timer from "@components/Timer";
 import GlobalStyle from "./style";
 import Footer from "@components/Footer";
+import Start from "@components/Start";
+import Stop from "@components/Stop";
 import { Reset } from "styled-reset";
 import { StatsContext } from "./services/contexts/index";
 
@@ -24,6 +26,8 @@ function App() {
                 <Counter />
                 <Timer />
               </div>
+              <Start />
+              <Stop />
               <Avatar />
             </section>
           </main>
