@@ -9,6 +9,7 @@ export function StatsContext({ children }) {
   const [money, setMoney] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
+  const [realeState, setRealeState] = useState(0);
 
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
