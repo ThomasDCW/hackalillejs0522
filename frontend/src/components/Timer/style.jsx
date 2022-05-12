@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export default styled.div`
-  width: 12vw;
+  display: flex;
   align-items: center;
-  background-color: #4465d9;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 4px 0px 0px #000000;
   img {
-    max-width: 200px;
-    width: 5vw;
+    height: 120px;
+    margin-right: 4vw;
   }
   .hideTimer {
     display: none;
-  }
-  p {
-    margin: 1em;
   }
 `;

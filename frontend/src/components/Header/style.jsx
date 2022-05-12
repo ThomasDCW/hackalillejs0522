@@ -3,6 +3,9 @@ import styled from "styled-components";
 export default styled.header`
   text-align: center;
   padding-top: 1vh;
-  height: 9vh;
-  background-color: #4465d9;
+  height: 6vh;
+  background-color: #585ad4;
+  img {
+    height: 100%;
+  }
 `;

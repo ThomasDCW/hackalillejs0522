@@ -4,7 +4,7 @@ export default styled.header`
   text-align: center;
   padding: 0.5vh;
   height: 3vh;
-  background-color: #4465d9;
+  background-color: #585ad4;
 
   img {
     height: 3vh;

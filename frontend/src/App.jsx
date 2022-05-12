@@ -20,11 +20,11 @@ function App() {
               <Gallery />
             </section>
             <section className="stats">
-              <Counter />
               <div>
+                <Counter />
                 <Timer />
-                <Avatar />
               </div>
+              <Avatar />
             </section>
           </main>
           <Footer />
