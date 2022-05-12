@@ -1,5 +1,9 @@
 import SCounter from "./style";
 
 export default function Wallet() {
-  return <SCounter>I'm the Counter</SCounter>;
+  return (
+    <SCounter>
+      <h1>1.000.000 €</h1>
+    </SCounter>
+  );
 }
