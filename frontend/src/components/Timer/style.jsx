@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export default styled.div`
-  height: 10vh;
   background-color: gold;
-
+  
   img {
     max-width: 200px;
     width: 5vw;
@@ -11,4 +10,9 @@ export default styled.div`
   .hideTimer {
     display: none;
   }
+
+  margin-left: 8vw;
+  height: 10vh;
+  width: 50vw;
+
 `;
