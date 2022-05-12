@@ -3,11 +3,8 @@ import styled from "styled-components";
 export default styled.section`
   min-height: 100vh;
   font-family: "Roboto", "Andika New Basic", sans-serif;
+  background-color: #fbb7a2;
 
-  .gallery {
-    width: 100vw;
-    height: 50vh;
-  }
   .stats {
     display: flex;
     justify-content: space-between;
