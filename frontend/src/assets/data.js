@@ -10,7 +10,7 @@ const datas = [
   {
     nom: "Champ d'avocat",
     profit: 17000,
-    impact_ecologique: "0,55",
+    impact_ecologique: 55,
     image: avocat,
     categorie: "Champ",
     cout_achat: 10000,
@@ -20,7 +20,7 @@ const datas = [
   {
     nom: "Champs de maïs",
     profit: 350,
-    impact_ecologique: "0,24",
+    impact_ecologique: 24,
     image: mais,
     categorie: "Champ",
     cout_achat: 10000,
@@ -30,7 +30,7 @@ const datas = [
   {
     nom: "Ferme de volaille",
     profit: 1800,
-    impact_ecologique: "0,83",
+    impact_ecologique: 83,
     image: volaille,
     categorie: "Elevage",
     cout_achat: 10000,
@@ -40,7 +40,7 @@ const datas = [
   {
     nom: "Ferme de boeuf",
     profit: 6500,
-    impact_ecologique: "0,346",
+    impact_ecologique: 346,
     image: boeuf,
     categorie: "Elevage",
     cout_achat: 10000,
@@ -51,7 +51,7 @@ const datas = [
   {
     nom: "Champ de fraise",
     profit: 6000,
-    impact_ecologique: "0,42",
+    impact_ecologique: 42,
     image: fraise,
     categorie: "champ",
     cout_achat: 10000,
@@ -62,7 +62,7 @@ const datas = [
   {
     nom: "Ferme de porc",
     profit: 1900,
-    impact_ecologique: "0,146",
+    impact_ecologique: 146,
     image: porc,
     categorie: "Elevage",
     cout_achat: 10000,
