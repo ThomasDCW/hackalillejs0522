@@ -8,6 +8,7 @@ export default styled.header`
   position: fixed;
   bottom: 0;
   width: 100vw;
+
   img {
     height: 3vh;
   }
