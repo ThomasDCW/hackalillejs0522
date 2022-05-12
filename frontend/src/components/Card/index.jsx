@@ -5,14 +5,16 @@ export default function Card(props) {
     <SCard>
       <h1>{props.name}</h1>
       <ul>
-        <li>{props.profit}</li>
-        <li>{props.impact_ecologique}</li>
-        <li>{props.categorie}</li>
-        <li>{props.cout_achat}</li>
-        <li>{props.superficie}</li>
+        <li>Profits : {props.profit}€</li>
+        <li>PEF : {props.impact_ecologique}kg CO2 eq/kg</li>
+        <li>
+          <button>-</button>
+          <button>+</button>
+        </li>
         <li>{props.production}</li>
       </ul>
       <img src={props.image} alt="img" />
+      <h2>Prix d'achat :{props.cout_achat}€</h2>
     </SCard>
   );
 }
