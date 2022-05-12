@@ -5,7 +5,7 @@ export default styled.div`
   width: 16rem;
   background-color: white;
   box-sizing: border-box;
-  border: 10px solid #4465d9;
+  border: 10px solid #585ad4;
   box-shadow: 19px 16px 5px 0px rgba(0, 0, 0, 0.75);
 
   display: flex;

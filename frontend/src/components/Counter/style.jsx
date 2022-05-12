@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-  background-color: #4465d9;
+  background-color: #585ad4;
   margin-top: 8vh;
   margin-left: 8vw;
   height: 10vh;
@@ -9,8 +9,9 @@ export default styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
   h1 {
     color: white;
-    font-size: 52px;
+    font-size: 36px;
   }
 `;
