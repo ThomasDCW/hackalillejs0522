@@ -4,7 +4,7 @@ export default styled.section`
   min-height: 100vh;
   .gallery {
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
   }
   .stats {
     display: flex;
