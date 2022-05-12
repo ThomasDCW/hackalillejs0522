@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export default styled.header`
   text-align: center;
-  padding: 0.5vh;
-  height: 3vh;
   background-color: #585ad4;
-
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   img {
     height: 3vh;
   }
