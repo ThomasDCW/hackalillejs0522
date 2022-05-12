@@ -5,5 +5,5 @@ import statsContext from "../../services/contexts/index";
 export default function Wallet() {
   const { money } = useContext(statsContext);
 
-  return <SCounter>{money}</SCounter>;
+  return <SCounter>{money}€</SCounter>;
 }
