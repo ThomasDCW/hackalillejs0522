@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 export default styled.div`
-  background-color: gold;
-  margin-left: 8vw;
-  height: 10vh;
-  width: 50vw;
+  width: 12vw;
+  align-items: center;
+  background-color: #4465d9;
+  img {
+    max-width: 200px;
+    width: 5vw;
+  }
+  .hideTimer {
+    display: none;
+  }
+  p {
+  }
 `;
