@@ -1,11 +1,15 @@
 import Header from "@components/Header";
-import reset, { Reset } from "styled-reset";
+import Card from "@components/Card";
+import { Reset } from "styled-reset";
 
 function App() {
   return (
     <div className="App">
       <Reset />
       <Header />
+      <main>
+        <Card />
+      </main>
     </div>
   );
 }
