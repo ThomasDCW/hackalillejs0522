@@ -2,7 +2,6 @@ import Header from "@components/Header";
 import Gallery from "@components/Gallery";
 import Counter from "@components/Counter";
 import Avatar from "@components/Avatar";
-import Inventory from "@components/Inventory";
 import Timer from "@components/Timer";
 import GlobalStyle from "./style";
 import { Reset } from "styled-reset";
@@ -14,16 +13,15 @@ function App() {
       <GlobalStyle>
         <Header />
         <main>
-          <section className="maincontainer">
+          <section className="gallery">
             <Gallery />
-            <div>
-              <Timer />
-              <Counter />
-            </div>
           </section>
-          <section className="sideContainer">
-            <Inventory />
-            <Avatar />
+          <section className="stats">
+            <Timer />
+            <div>
+              <Counter />
+              <Avatar />
+            </div>
           </section>
         </main>
       </GlobalStyle>
