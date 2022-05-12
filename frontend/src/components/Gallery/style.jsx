@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export default styled.section`
-  background-color: Grey;
+  height: 60vh;
 `;

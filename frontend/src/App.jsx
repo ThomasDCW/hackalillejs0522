@@ -1,11 +1,10 @@
 import Header from "@components/Header";
 import Gallery from "@components/Gallery";
-import Wallet from "@components/Wallet";
+import Counter from "@components/Counter";
 import Avatar from "@components/Avatar";
 import Inventory from "@components/Inventory";
-import Johndoe from "@components/Johnedoe";
+import Timer from "@components/Timer";
 import GlobalStyle from "./style";
-
 import { Reset } from "styled-reset";
 
 function App() {
@@ -15,11 +14,15 @@ function App() {
       <GlobalStyle>
         <Header />
         <main>
-          <Gallery />
-          <Johndoe />
-          <Wallet />
-          <Inventory />
-          <Avatar />
+          <section className="">
+            <Gallery />
+            <Timer />
+            <Counter />
+          </section>
+          <section className="sideContainer">
+            <Inventory />
+            <Avatar />
+          </section>
         </main>
       </GlobalStyle>
     </div>
