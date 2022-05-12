@@ -18,7 +18,7 @@ export default styled.div`
     text-shadow: 2px 2px 2px #fbb7a2;
   }
   .moin {
-    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    box-shadow: inset 0px 1px 0px 0px #a30000;
     background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
     background-color: #d0451b;
     border-radius: 3px;
@@ -34,7 +34,6 @@ export default styled.div`
     width: 50%;
   }
   .plus {
-    box-shadow: 0px 10px 14px -7px #3e7327;
     background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
     background-color: #77b55a;
     border-radius: 4px;
