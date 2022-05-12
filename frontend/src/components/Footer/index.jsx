@@ -1,10 +1,10 @@
-import SHeader from "./style";
+import SFooter from "./style";
 import logo from "../../assets/logoBigBill.png";
 
 export default function Header() {
   return (
-    <SHeader>
+    <SFooter>
       <img src={logo} alt="logo" />
-    </SHeader>
+    </SFooter>
   );
 }
