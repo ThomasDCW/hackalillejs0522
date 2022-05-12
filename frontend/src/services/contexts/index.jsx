@@ -6,7 +6,7 @@ export default statsContext;
 
 export function StatsContext({ children }) {
   const [timer, setTimer] = useState(2022);
-  const [money, setMoney] = useState(0);
+  const [money, setMoney] = useState(1000000);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
   const [realeState, setRealeState] = useState(0);
