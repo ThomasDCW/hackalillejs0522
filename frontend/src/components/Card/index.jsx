@@ -2,9 +2,11 @@ import SCard from "./style";
 import { useContext } from "react";
 import statsContext from "@services/contexts";
 import { useState } from "react";
+import useInterval from "./../../services/contexts/useInterval";
 
 export default function Card(props) {
   const { money, setMoney } = useContext(statsContext);
+
   const [nb, setNb] = useState(0);
   function nbAchat() {
     if (nb < 0) {
@@ -13,9 +15,16 @@ export default function Card(props) {
       return nb;
     }
   }
+  useInterval(() => {
+    setMoney(money + props.profit * nb);
+  }, 5000);
 
-  const incrementMoney = () => setMoney(money + props.cout_achat);
-  const deIncrementMoney = () => setMoney(money - props.cout_achat);
+  const incrementMoney = () => {
+    setMoney(money + props.cout_achat);
+  };
+  const deIncrementMoney = () => {
+    setMoney(money - props.cout_achat);
+  };
 
   return (
     <SCard>
@@ -26,6 +35,7 @@ export default function Card(props) {
         <li>Production : {props.production}</li>
         <li>
           <button
+            className="moin"
             onClick={() => {
               if (nb === 0) {
                 return setMoney(money);
@@ -37,6 +47,7 @@ export default function Card(props) {
             -
           </button>
           <button
+            className="plus"
             onClick={() => {
               deIncrementMoney();
               setNb(nb + 1);
@@ -44,8 +55,8 @@ export default function Card(props) {
           >
             +
           </button>
-          <p>{nbAchat()}</p>
         </li>
+        <h2>{nb}</h2>
       </ul>
       <img src={props.image} alt="img" />
       <h2>Prix d'achat :{props.cout_achat}€</h2>
