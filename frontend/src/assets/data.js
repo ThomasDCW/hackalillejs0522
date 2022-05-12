@@ -4,6 +4,7 @@ import volaille from "@assets/volaille.png";
 import boeuf from "@assets/boeuf.png";
 import fraise from "@assets/fraise.png";
 import porc from "@assets/porc.png";
+import sushi from "@assets/sushi.png";
 
 /*toute les unitées sont à la tonne */
 const datas = [
@@ -68,6 +69,16 @@ const datas = [
     cout_achat: 10000,
     superficie: "1hectar",
     production: 9,
+  },
+  {
+    nom: "Sushi",
+    profit: 3400,
+    impact_ecologique: 242,
+    image: sushi,
+    categorie: "Elevage",
+    cout_achat: 10000,
+    superficie: "1hectar",
+    production: 8,
   },
 ];
 export default datas;
