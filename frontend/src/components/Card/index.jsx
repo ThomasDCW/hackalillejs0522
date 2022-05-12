@@ -26,6 +26,7 @@ export default function Card(props) {
         <li>Production : {props.production}</li>
         <li>
           <button
+            className="moin"
             onClick={() => {
               if (nb === 0) {
                 return setMoney(money);
@@ -37,6 +38,7 @@ export default function Card(props) {
             -
           </button>
           <button
+            className="plus"
             onClick={() => {
               deIncrementMoney();
               setNb(nb + 1);
@@ -44,8 +46,8 @@ export default function Card(props) {
           >
             +
           </button>
-          <p>{nbAchat()}</p>
         </li>
+        <h2>{nb}</h2>
       </ul>
       <img src={props.image} alt="img" />
       <h2>Prix d'achat :{props.cout_achat}€</h2>
