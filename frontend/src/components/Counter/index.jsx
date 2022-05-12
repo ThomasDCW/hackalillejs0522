@@ -1,10 +1,10 @@
 import SCounter from "./style";
+import { useContext } from "react";
+import statsContext from "@services/contexts";
 
 export default function Wallet() {
-  return (
-    <SCounter>
-      <h1>1.000.000 €</h1>
-      <h1>PLANETE</h1>
-    </SCounter>
-  );
+
+  const { money } = useContext(statsContext);
+
+  return <SCounter>{money}</SCounter>;
 }

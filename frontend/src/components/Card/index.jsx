@@ -1,6 +1,15 @@
 import SCard from "./style";
+import { useContext } from "react";
+import statsContext from "@services/contexts";
+import { useState } from "react";
 
 export default function Card(props) {
+  const { money, setMoney } = useContext(statsContext);
+  const [nb, setNb] = useState(0);
+
+  const incrementMoney = () => setMoney(money + props.cout_achat);
+  const deIncrementMoney = () => setMoney(money - props.cout_achat);
+
   return (
     <SCard>
       <h1>{props.nom}</h1>
@@ -9,8 +18,23 @@ export default function Card(props) {
         <li>PEF : {props.impact_ecologique}kg CO2 eq/kg</li>
         <li>Production : {props.production}</li>
         <li>
-          <button>-</button>
-          <button>+</button>
+          <button
+            onClick={() => {
+              deIncrementMoney();
+              setNb(nb - 1);
+            }}
+          >
+            -
+          </button>
+          <button
+            onClick={() => {
+              incrementMoney();
+              setNb(nb + 1);
+            }}
+          >
+            +
+          </button>
+          <p>{nb}</p>
         </li>
       </ul>
       <img src={props.image} alt="img" />
