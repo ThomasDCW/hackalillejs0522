@@ -12,5 +12,6 @@ export default styled.div`
     display: none;
   }
   p {
+    margin: 1em;
   }
 `;
