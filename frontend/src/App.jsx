@@ -5,6 +5,7 @@ import Avatar from "@components/Avatar";
 import Timer from "@components/Timer";
 import GlobalStyle from "./style";
 import { Reset } from "styled-reset";
+import { StatsContext } from "./services/contexts/index";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           </section>
         </main>
       </GlobalStyle>
+
     </div>
   );
 }
