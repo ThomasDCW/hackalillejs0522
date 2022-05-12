@@ -20,7 +20,10 @@ function App() {
               <Gallery />
             </section>
             <section className="stats">
+              <Counter />
+
               <Timer />
+
               <div>
                 <Counter />
                 <Avatar />

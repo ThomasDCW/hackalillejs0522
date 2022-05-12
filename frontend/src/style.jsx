@@ -7,7 +7,6 @@ export default styled.section`
     height: 60vh;
   }
   .stats {
-    height: 30vh;
     display: flex;
     justify-content: space-between;
     div {
