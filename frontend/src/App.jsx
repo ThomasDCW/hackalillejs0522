@@ -21,11 +21,8 @@ function App() {
             </section>
             <section className="stats">
               <Counter />
-
-              <Timer />
-
               <div>
-                <Counter />
+                <Timer />
                 <Avatar />
               </div>
             </section>
