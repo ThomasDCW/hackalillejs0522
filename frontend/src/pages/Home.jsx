@@ -4,8 +4,10 @@ import Stop from "@components/Stop";
 export default function Home() {
   return (
     <>
-      <Start />
-      <Stop />
+      <div className="start">
+        <Start />
+        <Stop />
+      </div>
     </>
   );
 }
