@@ -14,10 +14,12 @@ function App() {
       <GlobalStyle>
         <Header />
         <main>
-          <section className="">
+          <section className="maincontainer">
             <Gallery />
-            <Timer />
-            <Counter />
+            <div>
+              <Timer />
+              <Counter />
+            </div>
           </section>
           <section className="sideContainer">
             <Inventory />
