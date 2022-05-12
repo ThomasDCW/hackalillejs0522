@@ -5,7 +5,7 @@ import { useState } from "react";
 import useInterval from "./../../services/contexts/useInterval";
 
 export default function Card(props) {
-  const { money, setMoney } = useContext(statsContext);
+  const { money, setMoney, timerActive } = useContext(statsContext);
 
   const [nb, setNb] = useState(0);
   function nbAchat() {
@@ -16,7 +16,7 @@ export default function Card(props) {
     }
   }
   useInterval(() => {
-    setMoney(money + props.profit * nb);
+    if (timerActive) setMoney(money + props.profit * nb);
   }, 5000);
 
   const incrementMoney = () => {
