@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export default styled.section`
+
   color: #272976;
   font-weight: Bold;
   text-shadow: 5px 2px 2px #fbb7a2;
@@ -18,6 +19,7 @@ export default styled.section`
       align-items: center;
     }
   }
+
   h1 {
     font-size: 80px;
     margin-bottom: 8vh;

@@ -10,8 +10,8 @@ const statsContext = createContext();
 export default statsContext;
 
 export function StatsContext({ children }) {
-  const [timer, setTimer] = useState(2044);
-  const [money, setMoney] = useState(1000000);
+  const [timer, setTimer] = useState(2070);
+  const [money, setMoney] = useState(400000);
   const [earth, setEarth] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
@@ -22,7 +22,7 @@ export function StatsContext({ children }) {
   const [endGame, setEndGame] = useState(false);
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
-  }, 5000);
+  }, 2000);
 
   const reset = () => {
     setTimerActive(false);
@@ -44,12 +44,11 @@ export function StatsContext({ children }) {
   };
 
   const endGameFunc = () => {
-    if (earth >= 5000 || timer >= 2046 || money <= 0) {
+    if (earth >= 5000 || timer >= 2100 || money <= 0) {
       setEndGame(true);
       reset();
       setModal(true);
     }
-    // à commpléter avec l'appel de la modale de Massima
   };
 
   return (
