@@ -10,10 +10,10 @@ import { useEffect } from "react";
 import StatsContext from "../services/contexts/index";
 
 export default function Game() {
-  const { timer, money, endGameFunc } = useContext(StatsContext);
+  const { timer, money, endGameFunc, earth } = useContext(StatsContext);
   useEffect(() => {
     endGameFunc();
-  }, [timer, money]);
+  }, [timer, money, earth]);
 
   return (
     <main>
