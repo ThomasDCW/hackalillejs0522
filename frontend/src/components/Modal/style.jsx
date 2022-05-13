@@ -28,6 +28,8 @@ export default styled.div`
   }
   .modal-content {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 40%;
     left: 50%;
     transition-delay: 1s;
@@ -45,5 +47,14 @@ export default styled.div`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+  }
+  p {
+    background-color: black;
+    border-radius: 2%;
+    opacity: 0.8;
+    color: #e76b19;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
   }
 `;

@@ -19,7 +19,11 @@ function Modal() {
             <div onClick={toggleModal} className="overlay"></div>
             <Link to="/gameover">
               <div className="modal-content">
-                <img src={gameover} />
+                <img src={gameover} className />
+                <p>
+                  De toute façon il est déjà trop tard... La responsabilité de
+                  l’Homme sur le réchauffement climatique est sans équivoque.
+                </p>
                 <button onClick={toggleModal} className="close-modal">
                   X
                 </button>
