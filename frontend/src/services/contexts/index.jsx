@@ -17,6 +17,7 @@ export function StatsContext({ children }) {
   const [timerActive, setTimerActive] = useState(false);
   const [realeState, setRealeState] = useState(0);
   const [annualProfit, setAnnualProfit] = useState(0);
+  const [choice, setChoice] = useState("vide");
 
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
@@ -58,6 +59,8 @@ export function StatsContext({ children }) {
         earth,
         setEarth,
         defineImg,
+        choice,
+        setChoice,
       }}
     >
       {children}
