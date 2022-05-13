@@ -7,6 +7,7 @@ import GlobalStyle from "./style";
 import Footer from "@components/Footer";
 import Start from "@components/Start";
 import Stop from "@components/Stop";
+import Modal from "@components/Modal";
 import { Reset } from "styled-reset";
 import { StatsContext } from "./services/contexts/index";
 
@@ -29,6 +30,7 @@ function App() {
               <Start />
               <Stop />
               <Avatar />
+              <Modal />
             </section>
           </main>
           <Footer />
