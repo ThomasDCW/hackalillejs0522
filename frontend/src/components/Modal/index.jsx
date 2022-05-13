@@ -1,9 +1,11 @@
 import SModal from "./style";
 import gameover from "../../assets/gameover.png";
-import { useState } from "react";
+import { useContext } from "react";
+import statsContext from "../../services/contexts/index";
 
 function Modal() {
-  const [modal, setModal] = useState(false);
+  const { modal, setModal } = useContext(statsContext);
+
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -11,9 +13,6 @@ function Modal() {
   return (
     <>
       <SModal>
-        <button onClick={toggleModal} className="btn-modal">
-          Open
-        </button>
         {modal && (
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
