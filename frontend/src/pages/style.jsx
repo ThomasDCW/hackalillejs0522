@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export default styled.section`
-
-  color: #272976;
   font-weight: Bold;
   text-shadow: 5px 2px 2px #fbb7a2;
 
