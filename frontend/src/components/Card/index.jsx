@@ -5,6 +5,7 @@ import { useState } from "react";
 import useInterval from "./../../services/contexts/useInterval";
 
 export default function Card(props) {
+
   const { money, setMoney, timerActive, earth, setEarth } =
     useContext(statsContext);
 
@@ -22,12 +23,14 @@ export default function Card(props) {
   const deIncrementMoney = () => {
     setMoney(money - props.cout_achat);
   };
+
   const incrementEarth = () => {
     setEarth(earth - props.impact_ecologique);
   };
   const deIncrementEarth = () => {
     setEarth(earth + props.impact_ecologique);
   };
+
 
   return (
     <SCard>
