@@ -1,31 +1,36 @@
 import styled from "styled-components";
 
 export default styled.section`
-  width: 100vw;
-  border: 1px solid red;
-  text-align: center;
+  color: #272976;
+  font-weight: Bold;
+  text-shadow: 5px 2px 2px #fbb7a2;
+
   .start {
     background: url("src/assets/home.jpg");
-    background-repeat: no-repeat;
-    background-position: fill;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-direction: center;
     align-items: center;
-    min-height: 90vh;
-    margin: auto;
+    height: 94vh;
+    div {
+      display: flex;
+      align-items: center;
+    }
   }
-
-  .start p,
   h1 {
-    width: 32vw;
+    font-size: 80px;
+    margin-bottom: 8vh;
+  }
+  p {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
+    font-size: 32px;
   }
-  h1 {
-    font-size: 3rem;
-    font-weight: 1000;
+  img {
+    height: 80px;
+    margin-right: 1em;
+  }
+  a {
+    text-decoration: none;
   }
 `;

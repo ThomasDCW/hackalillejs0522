@@ -9,11 +9,15 @@ export default function Home() {
       <SHome>
         <div className="start">
           <h1>Bienvenue chez Big Bill ! </h1>
-          <p>Vous avez 2 minutes pour investir et gagner plus d'argent!</p>
-          <p>
-            Mais attention, les ressources de la terre ne sont pas inépuisables
-            : faites attention à l'état de la terre.
-          </p>
+          <p>Vous avez 2 minutes pour investir et gagner de l'argent!</p>
+          <div>
+            <img src="src/assets/warning.png" />
+            <p>
+              Les ressources ne sont pas inépuisables, un conseil : faites
+              attention à l'état de la planète.
+            </p>
+            <img src="src/assets/warning.png" />
+          </div>
           <Link to="/game">
             <Start />
           </Link>
