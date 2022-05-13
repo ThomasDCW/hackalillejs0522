@@ -1,20 +1,19 @@
 import SGameOver from "./style";
 import gameover from "../assets/gameover.png";
+import { Link } from "react-router-dom";
 
 export default function GameOver() {
   return (
     <>
       <SGameOver>
         <div className="stop">
-          <h1>
-            <img src={gameover} />
-          </h1>
-          <p>Il est déjà trop tard</p>
-          <p>
-            Selon le dernier rapport du Groupe d'Experts Intergouvernemental sur
-            l'Evolution du Climat, en 2100, la température sur terre aura
-            augmenté de 4°C par rapport à 2050 et la mer aura monté d'1 mètre.
-          </p>
+          <a href="https://climate.selectra.com/fr/actualites/rapport-giec-2022">
+            Rapport de la GIEC
+          </a>
+          <a href="https://agribalyse.ademe.fr/">Agribalyse</a>
+          <Link to="/">
+            <button className="myButton">RETOUR</button>
+          </Link>
         </div>
       </SGameOver>
     </>
