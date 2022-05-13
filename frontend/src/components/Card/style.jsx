@@ -68,4 +68,6 @@ export default styled.div`
     font-size: 28px;
     font-weight: bold;
   }
+  @media screen and (max-width: 600px) {
+  }
 `;

@@ -10,4 +10,7 @@ export default styled.div`
     margin-bottom: 0;
     height: 350px;
   }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;

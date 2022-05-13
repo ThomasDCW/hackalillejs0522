@@ -64,4 +64,9 @@ export default styled.section`
     justify-content: center;
     align-items: center;
   }
+  @media screen and (max-width: 600px) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
