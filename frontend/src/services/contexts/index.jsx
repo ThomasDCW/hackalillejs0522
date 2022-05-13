@@ -15,7 +15,7 @@ export function StatsContext({ children }) {
   const [earth, setEarth] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
-  const [realeState, setRealeState] = useState(0);
+
   const [annualProfit, setAnnualProfit] = useState(0);
   const [choice, setChoice] = useState("vide");
   const [modal, setModal] = useState(false);
@@ -30,7 +30,7 @@ export function StatsContext({ children }) {
   };
 
   const defineImg = () => {
-    if (earth <= 1000) {
+    if (earth < 1000) {
       return <img src={imgEarth1} />;
     } else if (earth > 1000 && earth < 1999) {
       return <img src={imgEarth2} />;
