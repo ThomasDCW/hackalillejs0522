@@ -9,7 +9,9 @@ export default function Home() {
       <SHome>
         <div className="start">
           <h1>Bienvenue chez Big Bill ! </h1>
-          <p>Vous avez 2 minutes pour investir et gagner de l'argent!</p>
+          <p>
+            Vous avez jusque l'année 2100 pour investir et gagner de l'argent!
+          </p>
           <div>
             <img src="src/assets/warning.png" />
             <p>

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export default styled.div`
   color: #3d3b55;
-  height: 26rem;
-  width: 16rem;
+  height: 30rem;
+  width: 20rem;
   background-color: white;
   box-sizing: border-box;
   border: 10px solid #585ad4;
@@ -11,9 +11,12 @@ export default styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2vh;
-  li {
+  margin: 1vh;
+  span {
     font-size: 20px;
+  }
+  li {
+    font-size: 28px;
     text-align: center;
     text-shadow: 2px 2px 2px #fbb7a2;
   }
@@ -56,13 +59,13 @@ export default styled.div`
   h1 {
     text-shadow: 2px 2px 2px #fbb7a2;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
   }
   h2 {
     text-shadow: 2px 2px 2px #fbb7a2;
     text-align: center;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
   }
 `;
