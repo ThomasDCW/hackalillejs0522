@@ -2,52 +2,49 @@ import SHeader from "./style";
 import { useContext } from "react";
 import statsContext from "@services/contexts";
 import logo from "../../assets/logoBigBill1.png";
+import arbre from "@assets/arbre.png";
 
 export default function Header() {
   const { choice, setChoice } = useContext(statsContext);
+  console.log(setChoice);
   return (
     <SHeader>
       <div className="catFiltre">
         <button
+          className="globe bg"
           value="vide"
           onClick={(e) => {
             setChoice(e.target.value);
           }}
-        >
-          TOUT
-        </button>
+        ></button>
         <button
+          className="Champ bg"
           value="Champ"
           onClick={(e) => {
             setChoice(e.target.value);
           }}
-        >
-          Champs
-        </button>
+        ></button>
         <button
+          className="Usine bg"
           value="Usine"
           onClick={(e) => {
             setChoice(e.target.value);
           }}
-        >
-          Usines
-        </button>
+        ></button>
         <button
+          className="Vache bg"
           value="Elevage"
           onClick={(e) => {
             setChoice(e.target.value);
           }}
-        >
-          Autres
-        </button>
+        ></button>
         <button
+          className="Arbre bg"
           value="positif"
           onClick={(e) => {
             setChoice(e.target.value);
           }}
-        >
-          Ressources
-        </button>
+        ></button>
       </div>
       <img src={logo} alt="logo" />
     </SHeader>
