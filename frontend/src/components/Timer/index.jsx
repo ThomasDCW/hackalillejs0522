@@ -16,7 +16,6 @@ export default function Timer() {
         </p>
         <p>Bénéfices par an:{annualProfit}€</p>
       </div>
-      <History />
     </STimer>
   );
 }
