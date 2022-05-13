@@ -191,7 +191,7 @@ const datas = [
   },
   {
     nom: "Champ d'ail",
-    profit: 2300,
+    profit: 800,
     impact_ecologique: 37,
     image: ail,
     categorie: "Champ",
