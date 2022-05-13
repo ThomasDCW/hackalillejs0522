@@ -6,7 +6,6 @@ import arbre from "@assets/arbre.png";
 
 export default function Header() {
   const { choice, setChoice } = useContext(statsContext);
-  console.log(setChoice);
   return (
     <SHeader>
       <div className="catFiltre">

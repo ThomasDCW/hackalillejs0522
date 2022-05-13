@@ -4,7 +4,8 @@ export default styled.section`
   width: 100vw;
   border: 1px solid red;
   text-align: center;
-  .start {
+  .start,
+  .stop {
     background: url("src/assets/home.jpg");
     background-repeat: no-repeat;
     background-position: fill;
@@ -18,9 +19,10 @@ export default styled.section`
   }
 
   .start p,
-  h1 {
-    width: 32vw;
-    text-align: center;
+  h1,
+  .stop p,
+  .stop h1 {
+    width: 50vw;
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
   }
