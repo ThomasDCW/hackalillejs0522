@@ -1,14 +1,31 @@
 import styled from "styled-components";
-import imgHome from "../assets/home.jpg";
 
 export default styled.section`
-  font-family: "Roboto", "Andika New Basic", sans-serif;
+  width: 100vw;
+  border: 1px solid red;
+  text-align: center;
   .start {
-    background-image: imgHome;
+    background: url("src/assets/home.jpg");
+    background-repeat: no-repeat;
+    background-position: fill;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
+    min-height: 90vh;
+    margin: auto;
   }
 
-  .stats {
-    display: flex;
-    justify-content: space-between;
+  .start p,
+  h1 {
+    width: 32vw;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 1000;
   }
 `;

@@ -5,7 +5,7 @@ import Home from "@pages/Home";
 import Game from "@pages/Game";
 import { Reset } from "styled-reset";
 import { StatsContext } from "./services/contexts/index";
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
         <Reset />
         <GlobalStyle>
           <Header />
-          {/* <Routes>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/game" element={<Game />} />
-          </Routes> */}
+          </Routes>
           <Footer />
         </GlobalStyle>
       </StatsContext>
