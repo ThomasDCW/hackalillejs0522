@@ -18,18 +18,18 @@ export default function Card(props) {
   const [nb, setNb] = useState(0);
   useInterval(() => {
     if (timerActive) setMoney(money + props.profit * nb);
-  }, 2000);
+  }, 5000);
 
   useInterval(() => {
     if (annualProfit > 1) {
       return annualProfit;
     }
     if (timerActive) setAnnualProfit(props.profit * nb);
-  }, 2000);
+  }, 5000);
 
   useInterval(() => {
     if (timerActive) setEarth(earth + props.impact_ecologique * nb);
-  }, 2000);
+  }, 5000);
 
   const incrementMoney = () => {
     setMoney(money + props.cout_achat * 0.8);

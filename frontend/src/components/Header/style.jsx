@@ -50,4 +50,12 @@ export default styled.header`
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    .catFiltre {
+      display: none;
+    }
+    img {
+      margin-top: 0.1rem;
+    }
+  }
 `;

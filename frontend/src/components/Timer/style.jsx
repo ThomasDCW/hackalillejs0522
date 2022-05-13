@@ -14,4 +14,10 @@ export default styled.div`
       width: 70px;
     }
   }
+  @media screen and (max-width: 600px) {
+    .timer {
+      font-size: 32px;
+      margin-bottom: 0.5rem;
+    }
+  }
 `;

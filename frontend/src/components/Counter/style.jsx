@@ -41,4 +41,21 @@ export default styled.div`
       z-index: -1;
     }
   }
+  @media screen and (max-width: 600px) {
+    .money {
+      height: 5vh;
+      font-size: 40px;
+      margin-top: -6rem;
+    }
+    .earth {
+      width: 6rem;
+      font-size: 40px;
+      margin-top: 2rem;
+      margin: 1rem -5rem 0 0;
+
+      img {
+        width: 8rem;
+      }
+    }
+  }
 `;
