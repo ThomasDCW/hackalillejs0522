@@ -13,7 +13,9 @@ export default function Timer() {
         Année en cours : {timer}
       </p>
       <div className="gain">Gain par an:{annualProfit}</div>
-      <History />
+      <div className="history">
+        <History />
+      </div>
     </STimer>
   );
 }

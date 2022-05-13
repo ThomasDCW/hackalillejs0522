@@ -15,4 +15,6 @@ export default styled.div`
   .hideTimer {
     display: none;
   }
+  .history {
+  }
 `;
