@@ -151,7 +151,7 @@ const datas = [
   {
     nom: "Champ de blé",
     profit: 8500,
-    impact_eocolgique: 87,
+    impact_ecologique: 87,
     image: ble,
     categorie: "Champ",
     cout_achat: 105720,

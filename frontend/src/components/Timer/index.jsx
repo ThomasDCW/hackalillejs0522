@@ -1,6 +1,5 @@
 import STimer from "./style";
-import timerImg from "../../assets/timer.png";
-import History from "@components/History";
+
 import StatsContext from "../../services/contexts/index";
 import { useContext } from "react";
 
