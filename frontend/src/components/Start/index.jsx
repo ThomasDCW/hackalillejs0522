@@ -12,7 +12,7 @@ export default function Start() {
           setTimerActive(true);
         }}
       >
-        Start
+        START
       </button>
     </SStart>
   );

@@ -16,12 +16,9 @@ function history() {
   const affichage = [];
   return (
     <SHistory>
-      <ul>
-        <li>
-          {array}
-          {array2}
-        </li>
-      </ul>
+      <p>
+        {array} :{array2}€
+      </p>
     </SHistory>
   );
 }

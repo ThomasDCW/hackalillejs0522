@@ -1,24 +1,17 @@
 import styled from "styled-components";
 
 export default styled.div`
-  display: flex;
-  justify-content: space-around;
-  color: #585ad4;
-  font-size: 32px;
+  color: #000000;
   font-weight: bold;
-  text-shadow: 4px 0px 0px #000000;
+  text-shadow: 4px 0px 0px #fafafa;
   position: fixed;
   bottom: 2vh;
-  width: 50vw;
+  margin-left: 1vw;
 
   .timer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    font-size: 40px;
+    font-size: 52px;
     img {
-      width: 90px;
+      width: 70px;
     }
   }
 `;

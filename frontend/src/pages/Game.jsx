@@ -22,12 +22,8 @@ export default function Game() {
         <Gallery />
       </section>
       <section className="stats">
-        <div>
-          <Counter />
-          <Timer />
-        </div>
-        <Start />
-        <Stop />
+        <Counter />
+        <Timer />
         <Avatar />
       </section>
     </main>
