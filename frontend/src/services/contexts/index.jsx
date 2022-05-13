@@ -10,6 +10,7 @@ export function StatsContext({ children }) {
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
   const [realeState, setRealeState] = useState(0);
+  const [annualProfit, setAnnualProfit] = useState(0);
 
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
@@ -32,6 +33,8 @@ export function StatsContext({ children }) {
         impacctEcolo,
         setImpactEcolo,
         reset,
+        annualProfit,
+        setAnnualProfit,
       }}
     >
       {children}

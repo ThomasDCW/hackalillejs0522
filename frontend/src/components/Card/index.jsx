@@ -5,7 +5,8 @@ import { useState } from "react";
 import useInterval from "./../../services/contexts/useInterval";
 
 export default function Card(props) {
-  const { money, setMoney, timerActive } = useContext(statsContext);
+  const { money, setMoney, timerActive, annualProfit, setAnnualProfit } =
+    useContext(statsContext);
 
   const [nb, setNb] = useState(0);
   function nbAchat() {
@@ -18,12 +19,21 @@ export default function Card(props) {
   useInterval(() => {
     if (timerActive) setMoney(money + props.profit * nb);
   }, 5000);
+  useInterval(() => {
+    if (annualProfit > 1) {
+      return annualProfit;
+    }
+    if (timerActive) setAnnualProfit(props.profit * nb);
+  }, 5000);
 
   const incrementMoney = () => {
     setMoney(money + props.cout_achat);
   };
   const deIncrementMoney = () => {
     setMoney(money - props.cout_achat);
+  };
+  const incrementAnnualProfit = () => {
+    setAnnualProfit(annualProfit + props.profit);
   };
 
   return (
@@ -50,6 +60,8 @@ export default function Card(props) {
             className="plus"
             onClick={() => {
               deIncrementMoney();
+              incrementAnnualProfit();
+
               setNb(nb + 1);
             }}
           >
