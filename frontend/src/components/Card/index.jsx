@@ -32,7 +32,7 @@ export default function Card(props) {
   }, 5000);
 
   const incrementMoney = () => {
-    setMoney(money + props.cout_achat);
+    setMoney(money + props.cout_achat * 0.8);
   };
   const deIncrementMoney = () => {
     setMoney(money - props.cout_achat);
