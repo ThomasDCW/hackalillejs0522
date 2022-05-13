@@ -1,5 +1,10 @@
 import { createContext, useState } from "react";
 import useInterval from "./useInterval";
+import imgEarth1 from "../../assets/terre1.png";
+import imgEarth2 from "../../assets/terre2.png";
+import imgEarth3 from "../../assets/terre3.png";
+import imgEarth4 from "../../assets/terre4.png";
+import imgEarth5 from "../../assets/terre5.png";
 
 const statsContext = createContext();
 export default statsContext;
@@ -22,6 +27,20 @@ export function StatsContext({ children }) {
     setTimer(0);
   };
 
+  const defineImg = () => {
+    if (earth <= 1000) {
+      return <img src={imgEarth1} />;
+    } else if (earth > 1000 && earth < 1999) {
+      return <img src={imgEarth2} />;
+    } else if (earth > 2000 && earth < 2999) {
+      return <img src={imgEarth3} />;
+    } else if (earth > 3000 && earth < 3999) {
+      return <img src={imgEarth4} />;
+    } else if (earth > 4000 && earth < 4999) {
+      return <img src={imgEarth5} />;
+    }
+  };
+
   return (
     <statsContext.Provider
       value={{
@@ -38,6 +57,7 @@ export function StatsContext({ children }) {
         setAnnualProfit,
         earth,
         setEarth,
+        defineImg,
       }}
     >
       {children}
