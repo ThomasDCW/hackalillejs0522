@@ -8,14 +8,15 @@ export default function Timer() {
   const { timer, timerActive, annualProfit } = useContext(StatsContext);
   return (
     <STimer>
-      <img src={timerImg} />
-      <p className={timerActive ? "showTimer" : "hideTimer"}>
-        Année en cours : {timer}
-      </p>
-      <div className="gain">Gain par an:{annualProfit}</div>
-      <div className="history">
-        <History />
+      <div className="timer">
+        <img src="src/assets/timer.png" />
+
+        <p className={timerActive ? "showTimer" : "hideTimer"}>
+          Année : {timer}
+        </p>
+        <p>Bénéfices par an:{annualProfit}€</p>
       </div>
+      <History />
     </STimer>
   );
 }

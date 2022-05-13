@@ -7,6 +7,6 @@ export default styled.header`
   bottom: 0;
   width: 100vw;
   img {
-    height: 3vh;
+    height: 2vh;
   }
 `;
