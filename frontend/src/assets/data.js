@@ -66,7 +66,9 @@ const datas = [
     impact_ecologique: 53,
     image: fraise,
     categorie: "Champ",
+
     cout_achat: 28290,
+
     superficie: "1hectar",
     production: 34,
   },
@@ -117,7 +119,9 @@ const datas = [
     impact_ecologique: 116,
     image: usine,
     categorie: "Usine",
+
     cout_achat: 213200,
+
     superficie: "1hectar",
     production: 10,
   },
@@ -127,7 +131,9 @@ const datas = [
     impact_ecologique: 94,
     image: cafe,
     categorie: "Champ",
+
     cout_achat: 73690,
+
     superficie: "1hectar",
     production: 7,
   },
@@ -137,6 +143,7 @@ const datas = [
     impact_ecologique: 3273,
     image: platCuisiné,
     categorie: "Usine",
+
     cout_achat: 220000,
     superficie: "1hectar",
     production: 100,
@@ -148,6 +155,7 @@ const datas = [
     image: ble,
     categorie: "Champ",
     cout_achat: 105720,
+
     superficie: "1hectar",
     production: 640,
   },
