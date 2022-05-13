@@ -1,6 +1,9 @@
 import Header from "@components/Header";
 import GlobalStyle from "./style";
 import Footer from "@components/Footer";
+import Start from "@components/Start";
+import Stop from "@components/Stop";
+import Modal from "@components/Modal";
 import Home from "@pages/Home";
 import Game from "@pages/Game";
 import { Reset } from "styled-reset";
