@@ -1,5 +1,5 @@
 import SHeader from "./style";
-import logo from "../../assets/logoBigBill.png";
+import logo from "../../assets/logoBigBill1.png";
 
 export default function Header() {
   return (
