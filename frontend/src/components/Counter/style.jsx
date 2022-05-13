@@ -18,11 +18,11 @@ export default styled.div`
     justify-content: space-around;
   }
   .earth {
-    color: #ff0000;
+    color: #ffffff;
     font-size: 64px;
     text-shadow: 5px 5px 5px #000000;
     font-weight: bold;
-    background: url("src/assets/terre1.png");
+    // background: url("src/assets/terre1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -32,5 +32,11 @@ export default styled.div`
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+    img {
+      aspect-ratio: 1/1;
+      width: 12rem;
+      position: absolute;
+      z-index: -1;
+    }
   }
 `;
