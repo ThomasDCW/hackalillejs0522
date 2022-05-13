@@ -5,14 +5,28 @@ import { useState } from "react";
 import useInterval from "./../../services/contexts/useInterval";
 
 export default function Card(props) {
-
-  const { money, setMoney, timerActive, earth, setEarth } =
-    useContext(statsContext);
+  const {
+    money,
+    setMoney,
+    timerActive,
+    earth,
+    setEarth,
+    annualProfit,
+    setAnnualProfit,
+  } = useContext(statsContext);
 
   const [nb, setNb] = useState(0);
   useInterval(() => {
     if (timerActive) setMoney(money + props.profit * nb);
   }, 5000);
+
+  useInterval(() => {
+    if (annualProfit > 1) {
+      return annualProfit;
+    }
+    if (timerActive) setAnnualProfit(props.profit * nb);
+  }, 5000);
+
   useInterval(() => {
     if (timerActive) setEarth(earth + props.impact_ecologique * nb);
   }, 5000);
@@ -23,6 +37,9 @@ export default function Card(props) {
   const deIncrementMoney = () => {
     setMoney(money - props.cout_achat);
   };
+  const incrementAnnualProfit = () => {
+    setAnnualProfit(annualProfit + props.profit);
+  };
 
   const incrementEarth = () => {
     setEarth(earth - props.impact_ecologique);
@@ -30,7 +47,6 @@ export default function Card(props) {
   const deIncrementEarth = () => {
     setEarth(earth + props.impact_ecologique);
   };
-
 
   return (
     <SCard>
@@ -57,6 +73,8 @@ export default function Card(props) {
             className="plus"
             onClick={() => {
               deIncrementMoney();
+              incrementAnnualProfit();
+
               deIncrementEarth();
               setNb(nb + 1);
             }}

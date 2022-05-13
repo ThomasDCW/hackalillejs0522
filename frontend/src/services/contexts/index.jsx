@@ -1,17 +1,24 @@
 import { createContext, useState } from "react";
 import useInterval from "./useInterval";
+import imgEarth1 from "../../assets/terre1.png";
+import imgEarth2 from "../../assets/terre2.png";
+import imgEarth3 from "../../assets/terre3.png";
+import imgEarth4 from "../../assets/terre4.png";
+import imgEarth5 from "../../assets/terre5.png";
 
 const statsContext = createContext();
 export default statsContext;
 
 export function StatsContext({ children }) {
-  const [timer, setTimer] = useState(2022);
+  const [timer, setTimer] = useState(2040);
   const [money, setMoney] = useState(1000000);
   const [earth, setEarth] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
   const [realeState, setRealeState] = useState(0);
-
+  const [annualProfit, setAnnualProfit] = useState(0);
+  const [choice, setChoice] = useState("vide");
+  const [endGame, setEndGame] = useState(false);
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
   }, 5000);
@@ -19,6 +26,28 @@ export function StatsContext({ children }) {
   const reset = () => {
     setTimerActive(false);
     setTimer(0);
+  };
+
+  const defineImg = () => {
+    if (earth <= 1000) {
+      return <img src={imgEarth1} />;
+    } else if (earth > 1000 && earth < 1999) {
+      return <img src={imgEarth2} />;
+    } else if (earth > 2000 && earth < 2999) {
+      return <img src={imgEarth3} />;
+    } else if (earth > 3000 && earth < 3999) {
+      return <img src={imgEarth4} />;
+    } else if (earth > 4000 && earth < 4999) {
+      return <img src={imgEarth5} />;
+    }
+  };
+
+  const endGameFunc = () => {
+    if (earth >= 5000 || timer >= 2046 || money <= 0) {
+      setEndGame(true);
+      reset();
+    }
+    // à commpléter avec l'appel de la modale de Massima
   };
 
   return (
@@ -33,8 +62,14 @@ export function StatsContext({ children }) {
         impacctEcolo,
         setImpactEcolo,
         reset,
+        annualProfit,
+        setAnnualProfit,
         earth,
         setEarth,
+        defineImg,
+        choice,
+        setChoice,
+        endGameFunc,
       }}
     >
       {children}
