@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default styled.div`
   text-decoration: none;
   button {
-    font-size: 50px;
+    font-size: 40px;
     box-shadow: 3px 3px 3px 4px #014829;
     background: linear-gradient(to bottom, #5ad79d 5%, #5ad79d 100%);
     background-color: #5ad79d;
@@ -11,7 +11,7 @@ export default styled.div`
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    padding: 2rem 4rem;
+    padding: 1rem 3rem;
     text-decoration: none;
     text-shadow: 0px 1px 0px #35c61f;
   }

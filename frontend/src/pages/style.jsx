@@ -3,8 +3,9 @@ import styled from "styled-components";
 export default styled.section`
   font-weight: Bold;
   text-shadow: 5px 2px 2px #fbb7a2;
-
+  //HOMEPAGE
   .start {
+    color: #1e212b;
     background: url("src/assets/home.jpg");
     background-size: cover;
     display: flex;
@@ -17,18 +18,26 @@ export default styled.section`
       align-items: center;
     }
   }
-
   h1 {
-    font-size: 80px;
+    font-size: 50px;
     margin-bottom: 8vh;
+  }
+  ul {
+    list-style: square;
+    li {
+      font-size: 18px;
+      margin: 0.5em;
+    }
   }
   p {
     text-align: center;
-    font-size: 32px;
+    font-size: 25px;
+    margin-bottom: 4vh;
   }
+  //HOMEPAGE
   img {
-    height: 80px;
-    margin-right: 1em;
+    height: 30px;
+    margin-left: 2em;
   }
   a {
     font-size: 40px;

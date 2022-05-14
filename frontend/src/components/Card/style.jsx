@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-  color: #3d3b55;
+  color: #1e212b;
   height: 20rem;
   width: 15rem;
   background-color: white;

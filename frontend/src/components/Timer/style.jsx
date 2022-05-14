@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export default styled.div`
-  color: #000000;
+  color: #1e212b;
   font-weight: bold;
-  text-shadow: 4px 0px 0px #fafafa;
+  text-shadow: 4px 0px 0px #f9f9f9;
   position: fixed;
   bottom: 2vh;
   margin-left: 1vw;
