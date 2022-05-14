@@ -13,7 +13,7 @@ export default function Timer() {
         <p className={timerActive ? "showTimer" : "hideTimer"}>
           Année : {timer}
         </p>
-        <p>Bénéfices par an:{annualProfit}€</p>
+        <p>Bénéfices par an : {annualProfit}€</p>
       </div>
     </STimer>
   );

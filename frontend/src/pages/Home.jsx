@@ -9,17 +9,16 @@ export default function Home() {
       <SHome>
         <div className="start">
           <h1>Bienvenue chez Big Bill ! </h1>
-          <p>
-            Vous avez jusque l'année 2100 pour investir et gagner de l'argent!
-          </p>
-          <div>
-            <img src="src/assets/warning.png" />
-            <p>
-              Les ressources ne sont pas inépuisables, un conseil : faites
-              attention à l'état de la planète.
-            </p>
-            <img src="src/assets/warning.png" />
-          </div>
+          <ul>
+            <p>Règles du jeu :</p>
+            <li>Vous démarrez avec 400 000 €</li>
+            <li>
+              Vous avez jusqu'à l'année 2100 pour investir et gagner de l'argent
+              (une année = 5 secondes)
+            </li>
+            <li>Maintenez l'indicateur de la planète en dessous de 8000</li>
+            <li>Maintenez votre argent au-dessus de 0 €</li>
+          </ul>
           <Link to="/game">
             <Start />
           </Link>

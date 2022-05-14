@@ -7,11 +7,11 @@ export default function Wallet() {
 
   return (
     <SCounter>
-      <div className="money">{money}€</div>
       <div className="earth">
         {defineImg()}
         {earth}
       </div>
+      <div className="money">{money}€</div>
     </SCounter>
   );
 }
