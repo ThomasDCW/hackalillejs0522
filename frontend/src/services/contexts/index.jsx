@@ -38,13 +38,13 @@ export function StatsContext({ children }) {
       return <img src={imgEarth3} />;
     } else if (earth > 3000 && earth < 3999) {
       return <img src={imgEarth4} />;
-    } else if (earth > 4000 && earth < 4999) {
+    } else if (earth > 4000 && earth < 10000) {
       return <img src={imgEarth5} />;
     }
   };
 
   const endGameFunc = () => {
-    if (earth >= 5000 || timer >= 2100 || money <= 0) {
+    if (earth >= 8000 || timer >= 2100 || money <= 0) {
       setEndGame(true);
       reset();
       setModal(true);
