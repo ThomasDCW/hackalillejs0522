@@ -16,8 +16,9 @@ function Modal() {
       <SModal>
         {modal && (
           <div className="modal">
-            <div onClick={toggleModal} className="overlay"></div>
             <Link to="/gameover">
+              <div onClick={toggleModal} className="overlay"></div>
+
               <div className="modal-content">
                 <img src={gameover} className />
                 <p>
