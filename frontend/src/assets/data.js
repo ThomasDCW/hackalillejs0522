@@ -41,7 +41,7 @@ const datas = [
   },
   {
     nom: "Ferme de volaille",
-    profit: 800,
+    profit: 3800,
     impact_ecologique: 731,
     image: volaille,
     categorie: "Elevage",
@@ -52,7 +52,7 @@ const datas = [
   {
     nom: "Ferme de boeuf",
     profit: 6500,
-    impact_ecologique: 3398,
+    impact_ecologique: 1323,
     image: boeuf,
     categorie: "Elevage",
     cout_achat: 19343,
@@ -99,7 +99,7 @@ const datas = [
     impact_ecologique: -400,
     image: foret,
     categorie: "positif",
-    cout_achat: 400000,
+    cout_achat: 100000,
     superficie: "1hectar",
     production: 0,
   },

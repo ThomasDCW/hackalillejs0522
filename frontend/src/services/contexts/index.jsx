@@ -44,7 +44,7 @@ export function StatsContext({ children }) {
   };
 
   const endGameFunc = () => {
-    if (earth >= 5000 || timer >= 2060 || money <= 0) {
+    if (earth >= 5000 || timer >= 2100 || money <= 0) {
       setEndGame(true);
       reset();
       setModal(true);
