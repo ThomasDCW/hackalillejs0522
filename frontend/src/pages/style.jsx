@@ -40,27 +40,24 @@ export default styled.section`
     margin-left: 2em;
   }
   a {
-    font-size: 40px;
+    color: #1e212b;
+    font-size: 20px;
     text-decoration: none;
     margin-top: 2vh;
   }
 
   .myButton {
-    margin-top: 8vh;
     box-shadow: 3px 4px 0px 0px #070707;
-    background: linear-gradient(to bottom, #585ad4 5%, #378de5 100%);
-    background-color: #585ad4;
-
-    border: 1px solid #337bc4;
+    background: linear-gradient(to bottom, #003cff 5%, #067aed 100%);
+    background-color: #1e212b;
+    border: 1px solid #1e212b;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-
-    font-size: 50px;
-
-    padding: 2rem 4rem;
+    font-size: 30px;
+    padding: 1rem 3rem;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #585ad4;
+    text-shadow: 0px 1px 0px #000000;
   }
 
   .myButton:active {
@@ -68,6 +65,7 @@ export default styled.section`
     top: 1px;
   }
   .stop {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
