@@ -32,7 +32,7 @@ export default function Card(props) {
   }, 5000);
 
   const incrementMoney = () => {
-    setMoney(money + props.cout_achat);
+    setMoney(money + props.cout_achat * 0.8);
   };
   const deIncrementMoney = () => {
     setMoney(money - props.cout_achat);
@@ -52,9 +52,13 @@ export default function Card(props) {
     <SCard>
       <h1>{props.nom}</h1>
       <ul>
-        <li>Profits : {props.profit}€</li>
-        <li>PEF : {props.impact_ecologique}kg CO2 eq/kg</li>
-        <li>Production : {props.production}</li>
+        <li>
+          Profits : {props.profit}€/<span>an</span>
+        </li>
+        <li>
+          PEF : {props.impact_ecologique}kg CO2 eq/<span>kg</span>
+        </li>
+
         <li>
           <button
             className="moin"
@@ -85,7 +89,7 @@ export default function Card(props) {
         <h2>{nb}</h2>
       </ul>
       <img src={props.image} alt="img" />
-      <h2>Prix d'achat :{props.cout_achat}€</h2>
+      <h2>PRIX D'ACHAT :{props.cout_achat}€</h2>
     </SCard>
   );
 }

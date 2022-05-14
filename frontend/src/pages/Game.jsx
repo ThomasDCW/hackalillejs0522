@@ -4,29 +4,26 @@ import Avatar from "@components/Avatar";
 import Timer from "@components/Timer";
 import Start from "@components/Start";
 import Stop from "@components/Stop";
+import Modal from "@components/Modal";
 import { useContext } from "react";
-
 import { useEffect } from "react";
 import StatsContext from "../services/contexts/index";
 
 export default function Game() {
-  const { timer, endGameFunc } = useContext(StatsContext);
+  const { timer, money, endGameFunc, earth } = useContext(StatsContext);
   useEffect(() => {
     endGameFunc();
-  }, [timer]);
+  }, [timer, money, earth]);
 
   return (
     <main>
+      <Modal />
       <section className="gallery">
         <Gallery />
       </section>
       <section className="stats">
-        <div>
-          <Counter />
-          <Timer />
-        </div>
-        <Start />
-        <Stop />
+        <Counter />
+        <Timer />
         <Avatar />
       </section>
     </main>

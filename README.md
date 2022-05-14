@@ -1,9 +1,23 @@
-## Concept
+## Hackaton Wild Code School -05.2022
+
+## Team : Casier Julianne, Jorand Jérémy, Mao Massima, Le Floch Romain, Di Cola Thomas
+
+## Ecology / Green IT
+
+## 30h
+
+## Projet Big Bill
+
+Jeu d'investissement dans lequel il vous faudra faire attention à vos choix. Certains vous rapporteront plus que d'autres.
+But du jeu : vous enrichir tout en préservant la planète.
+
+Pour réaliser le projet nous avons utilisé le template que nous utilisons en formation.
+Après avoir cloné le repo, il faudra suivre les instructions suivantes :
+
+## Setup & Use
 
 This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
 It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
-
-## Setup & Use
 
 ### Project Initialization
 

@@ -1,23 +1,21 @@
 import styled from "styled-components";
 
 export default styled.div`
+  text-decoration: none;
   button {
     font-size: 50px;
-    box-shadow: 3px 4px 0px 0px #000000;
-    background: linear-gradient(to bottom, #35c61f 5%, #35c61f 100%);
-    background-color: #35c61f;
-    border-radius: 18px;
-    border: 1px solid #35c61f;
+    box-shadow: 3px 3px 3px 4px #014829;
+    background: linear-gradient(to bottom, #5ad79d 5%, #5ad79d 100%);
+    background-color: #5ad79d;
+    border: 1px solid #5ad79d;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
-    padding: 7px 25px;
+    padding: 2rem 4rem;
     text-decoration: none;
     text-shadow: 0px 1px 0px #35c61f;
-    margin: 0.5em;
   }
-  .hide {
-    opacity: 10%;
+  button:active {
+    text-decoration: none;
   }
 `;

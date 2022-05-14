@@ -5,12 +5,10 @@ export default styled.section`
   background-color: #fbb7a2;
   height: 100vh;
   .gallery {
-    height: 55vh;
+    height: 60vh;
     overflow: scroll;
   }
   .stats {
-    display: flex;
-    justify-content: space-between;
     position: fixed;
   }
 `;

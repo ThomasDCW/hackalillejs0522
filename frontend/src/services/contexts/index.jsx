@@ -10,14 +10,15 @@ const statsContext = createContext();
 export default statsContext;
 
 export function StatsContext({ children }) {
-  const [timer, setTimer] = useState(2040);
-  const [money, setMoney] = useState(1000000);
+  const [timer, setTimer] = useState(2022);
+  const [money, setMoney] = useState(400000);
   const [earth, setEarth] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
-  const [realeState, setRealeState] = useState(0);
+
   const [annualProfit, setAnnualProfit] = useState(0);
   const [choice, setChoice] = useState("vide");
+  const [modal, setModal] = useState(false);
   const [endGame, setEndGame] = useState(false);
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
@@ -29,7 +30,7 @@ export function StatsContext({ children }) {
   };
 
   const defineImg = () => {
-    if (earth <= 1000) {
+    if (earth < 1000) {
       return <img src={imgEarth1} />;
     } else if (earth > 1000 && earth < 1999) {
       return <img src={imgEarth2} />;
@@ -43,11 +44,11 @@ export function StatsContext({ children }) {
   };
 
   const endGameFunc = () => {
-    if (earth >= 5000 || timer >= 2046 || money <= 0) {
+    if (earth >= 5000 || timer >= 2060 || money <= 0) {
       setEndGame(true);
       reset();
+      setModal(true);
     }
-    // à commpléter avec l'appel de la modale de Massima
   };
 
   return (
@@ -70,6 +71,8 @@ export function StatsContext({ children }) {
         choice,
         setChoice,
         endGameFunc,
+        modal,
+        setModal,
       }}
     >
       {children}
