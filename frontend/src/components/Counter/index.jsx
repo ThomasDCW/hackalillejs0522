@@ -3,7 +3,8 @@ import { useContext } from "react";
 import statsContext from "../../services/contexts/index";
 
 export default function Wallet() {
-  const { money, earth, defineImg } = useContext(statsContext);
+  const { money, earth, defineImg, eau, energie, sol } =
+    useContext(statsContext);
 
   return (
     <SCounter>
@@ -12,6 +13,9 @@ export default function Wallet() {
         {defineImg()}
         {earth}
       </div>
+      <div className="eau">Consomation eau: {eau}</div>
+      <div className="energie">Consomation energie: {energie}</div>
+      <div className="sol">Utilisation du sol: {sol}</div>
     </SCounter>
   );
 }

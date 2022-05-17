@@ -18,6 +18,9 @@ export default function Gallery() {
                   nom={data.nom}
                   profit={data.profit}
                   impact_ecologique={data.impact_ecologique}
+                  consommation_eau={data.consommation_eau}
+                  consommation_energetique={data.consommation_energetique}
+                  utilisation_sol={data.utilisation_sol}
                   categorie={data.categorie}
                   cout_achat={data.cout_achat}
                   superficie={data.superficie}
@@ -36,6 +39,9 @@ export default function Gallery() {
               nom={data.nom}
               profit={data.profit}
               impact_ecologique={data.impact_ecologique}
+              consommation_eau={data.consommation_eau}
+              consommation_energetique={data.consommation_energetique}
+              utilisation_sol={data.utilisation_sol}
               categorie={data.categorie}
               cout_achat={data.cout_achat}
               superficie={data.superficie}
