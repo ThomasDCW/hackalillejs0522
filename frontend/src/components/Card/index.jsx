@@ -61,22 +61,7 @@ export default function Card(props) {
         <li>
           PEF : {props.impact_ecologique}kg CO2 eq/<span>kg</span>
         </li>
-
         <li>
-          <button
-            className="moin"
-            onClick={() => {
-              if (nb === 0) {
-                return setMoney(money);
-              }
-              incrementMoney();
-              incrementEarth();
-              deincrementAnnualProfit();
-              setNb(nb - 1);
-            }}
-          >
-            -
-          </button>
           <button
             className="plus"
             onClick={() => {
@@ -86,13 +71,13 @@ export default function Card(props) {
               setNb(nb + 1);
             }}
           >
-            +
+            Acheter pour <br />
+            {props.cout_achat} €
           </button>
         </li>
         <h2>{nb}</h2>
       </ul>
       <img src={props.image} alt="img" />
-      <h2>PRIX D'ACHAT :{props.cout_achat}€</h2>
     </SCard>
   );
 }

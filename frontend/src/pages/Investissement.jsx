@@ -20,8 +20,10 @@ export default function Game() {
         <Gallery />
       </section>
       <section className="stats">
-        <Counter />
-        <Timer />
+        <div className="cadre">
+          <Counter />
+          <Timer />
+        </div>
         <Avatar />
       </section>
     </main>
