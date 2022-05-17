@@ -1,6 +1,6 @@
 ## Hackaton Wild Code School -05.2022
 
-## Team : Casier Julianne, Jorand Jérémy, Mao Massima, Le Floch Romain, Di Cola Thomas
+## Team : Casier Juliane, Jorand Jérémy, Mao Massima, Le Floch Romain, Di Cola Thomas
 
 ## Ecology / Green IT
 
