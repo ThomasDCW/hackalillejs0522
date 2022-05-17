@@ -5,10 +5,13 @@ export default styled.section`
   background-color: #fbb7a2;
   height: 100vh;
   .gallery {
-    height: 60vh;
+    height: 70vh;
     overflow: scroll;
   }
   .stats {
     position: fixed;
+  }
+  .cadre {
+    border: 1px solid black;
   }
 `;
