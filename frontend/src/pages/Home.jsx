@@ -20,7 +20,7 @@ export default function Home() {
             </p>
             <img src="src/assets/warning.png" />
           </div>
-          <Link to="/game">
+          <Link to="/investissement">
             <Start />
           </Link>
         </div>
