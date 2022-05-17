@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export default styled.div`
   position: fixed;
+  display: flex;
+  flex-wrap: wrap;
   width: 20vw;
   flex-direction: column;
   margin-left: 60vw;
+  height: 20vh;
   .money {
     color: #ffe100;
     font-size: 25px;
@@ -40,6 +43,10 @@ export default styled.div`
       position: absolute;
       z-index: -1;
     }
+  }
+  .eau {
+    background-color: red;
+    height: 3vh;
   }
   @media screen and (max-width: 600px) {
     .money {

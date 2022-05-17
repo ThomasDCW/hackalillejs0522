@@ -13,6 +13,9 @@ export function StatsContext({ children }) {
   const [timer, setTimer] = useState(2022);
   const [money, setMoney] = useState(400000);
   const [earth, setEarth] = useState(0);
+  const [eau, setEau] = useState(0);
+  const [energie, setEnergie] = useState(0);
+  const [sol, setSol] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
 
@@ -73,6 +76,12 @@ export function StatsContext({ children }) {
         endGameFunc,
         modal,
         setModal,
+        eau,
+        setEau,
+        energie,
+        setEnergie,
+        sol,
+        setSol,
       }}
     >
       {children}

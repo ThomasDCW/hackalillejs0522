@@ -1,8 +1,8 @@
-import Gallery from "@components/Gallery";
 import Counter from "@components/Counter";
 import Avatar from "@components/Avatar";
 import Timer from "@components/Timer";
 import Modal from "@components/Modal";
+import GaleryEmbauche from "@components/GalleryEmbauche";
 import { useContext } from "react";
 import { useEffect } from "react";
 import StatsContext from "../services/contexts/index";
@@ -17,7 +17,7 @@ export default function Game() {
     <main>
       <Modal />
       <section className="gallery">
-        <Gallery />
+        <GaleryEmbauche />
       </section>
       <section className="stats">
         <div className="cadre">

@@ -12,13 +12,30 @@ export default styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 1vh;
-  span {
-    font-size: 20px;
-  }
-  li {
-    font-size: 28px;
+  .profits {
     text-align: center;
-    text-shadow: 2px 2px 2px #fbb7a2;
+    span {
+      font-size: 1.3rem;
+      font-weight: 1000;
+    }
+  }
+  span {
+    font-size: 0.8rem;
+    color: black;
+  }
+  table {
+    background-color: #d7d6d6;
+    th {
+      border: 1px solid #585ad4;
+    }
+  }
+  .qte {
+    text-align: left;
+    color: #b00000;
+  }
+  .center {
+    width: 100%;
+    text-align: center;
   }
   .plus {
     background: linear-gradient(to bottom, #5ad79d 5%, #5ad79d 100%);
