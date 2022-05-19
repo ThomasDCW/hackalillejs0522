@@ -19,6 +19,8 @@ export default function Card(props) {
     setSol,
     energie,
     setEnergie,
+    investissement,
+    setInvestissement,
   } = useContext(statsContext);
 
   const [nb, setNb] = useState(0);
@@ -33,53 +35,14 @@ export default function Card(props) {
     }
     if (timerActive) setAnnualProfit(props.profit * nb);
   }, 5000);
+
   //========  actualisation chaque année des stats  ========//
   useInterval(() => {
     if (timerActive) setEarth(earth + props.impact_ecologique * nb);
+    setEau(eau + props.consommation_eau * nb);
+    setEnergie(energie + props.consommation_energetique * nb);
+    setSol(sol + props.utilisation_sol * nb);
   }, 5000);
-  useInterval(() => {
-    if (timerActive) setEau(eau + props.consommation_eau * nb);
-  }, 5000);
-  useInterval(() => {
-    if (timerActive) setEnergie(energie + props.consommation_energetique * nb);
-  }, 5000);
-  useInterval(() => {
-    if (timerActive) setSol(sol + props.utilisation_sol * nb);
-  }, 5000);
-
-  //========  €  =======//
-  const incrementMoney = () => {
-    setMoney(money + props.cout_achat * 0.8);
-  };
-  const deIncrementMoney = () => {
-    setMoney(money - props.cout_achat);
-  };
-  //Incremente les profits par an//
-  const incrementAnnualProfit = () => {
-    setAnnualProfit(annualProfit + props.profit);
-  };
-  const deincrementAnnualProfit = () => {
-    setAnnualProfit(annualProfit - props.profit);
-  };
-  //Incremente les Particules//
-  const incrementEarth = () => {
-    setEarth(earth - props.impact_ecologique);
-  };
-  const deIncrementEarth = () => {
-    setEarth(earth + props.impact_ecologique);
-  };
-  //Incremente l'Eau//
-  const incrementEau = () => {
-    setEau(eau + props.consommation_eau);
-  };
-  //Incremente energie//
-  const incrementEnergie = () => {
-    setEnergie(energie + props.consommation_energetique);
-  };
-  //Incremente sol//
-  const incrementSol = () => {
-    setSol(sol + props.utilisation_sol);
-  };
 
   return (
     <SCard>
@@ -124,25 +87,11 @@ export default function Card(props) {
           </tr>
         </tbody>
       </table>
-      <div className="center">
-        <button
-          className="plus"
-          onClick={() => {
-            deIncrementMoney();
-            incrementAnnualProfit();
-            deIncrementEarth();
-            setNb(nb + 1);
-            incrementEau();
-            incrementEnergie();
-            incrementSol();
-          }}
-        >
-          Acheter pour <br />
-          {props.cout_achat} €
-        </button>
-      </div>
+      {props.upgrade}
+      {props.buttonAchat}
       <h2>{nb}</h2>
       <img src={props.image} alt="img" />
+      {props.buttonVente}
     </SCard>
   );
 }

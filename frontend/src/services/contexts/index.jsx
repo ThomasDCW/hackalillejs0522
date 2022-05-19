@@ -18,11 +18,11 @@ export function StatsContext({ children }) {
   const [sol, setSol] = useState(0);
   const [impacctEcolo, setImpactEcolo] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
-
   const [annualProfit, setAnnualProfit] = useState(0);
-  const [choice, setChoice] = useState("vide");
   const [modal, setModal] = useState(false);
   const [endGame, setEndGame] = useState(false);
+  const [investissement, setInvestissement] = useState([]);
+
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
   }, 5000);
@@ -71,8 +71,6 @@ export function StatsContext({ children }) {
         earth,
         setEarth,
         defineImg,
-        choice,
-        setChoice,
         endGameFunc,
         modal,
         setModal,
@@ -82,6 +80,8 @@ export function StatsContext({ children }) {
         setEnergie,
         sol,
         setSol,
+        investissement,
+        setInvestissement,
       }}
     >
       {children}

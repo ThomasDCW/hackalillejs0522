@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.div`
   color: #3d3b55;
-  height: 30rem;
+  height: 34rem;
   width: 20rem;
   background-color: white;
   box-sizing: border-box;

@@ -20,6 +20,7 @@ import liqueur from "@assets/liqueur.jpg";
 /*toute les unitées sont à la tonne */
 const datas = [
   {
+    id: 1,
     nom: "Champ d'avocat",
     profit: 17000,
     impact_ecologique: 275,
@@ -33,6 +34,7 @@ const datas = [
     production: 10,
   },
   {
+    id: 2,
     nom: "Champs de maïs",
     profit: 350,
     impact_ecologique: 124,
@@ -46,6 +48,7 @@ const datas = [
     production: 100,
   },
   {
+    id: 3,
     nom: "Ferme de volaille",
     profit: 800,
     impact_ecologique: 731,
@@ -59,6 +62,7 @@ const datas = [
     production: 80,
   },
   {
+    id: 4,
     nom: "Ferme de boeuf",
     profit: 6500,
     impact_ecologique: 3398,
@@ -73,6 +77,7 @@ const datas = [
   },
   ,
   {
+    id: 5,
     nom: "Champ de fraise",
     profit: 600,
     impact_ecologique: 53,
@@ -87,6 +92,7 @@ const datas = [
   },
   ,
   {
+    id: 6,
     nom: "Ferme de porc",
     profit: 1900,
     impact_ecologique: 95,
@@ -100,6 +106,7 @@ const datas = [
     production: 9,
   },
   {
+    id: 7,
     nom: "Usine de sushi",
     profit: 3400,
     impact_ecologique: 263,
@@ -113,6 +120,7 @@ const datas = [
     production: 8,
   },
   {
+    id: 8,
     nom: "Forêt",
     profit: 0,
     impact_ecologique: -400,
@@ -126,6 +134,7 @@ const datas = [
     production: 0,
   },
   {
+    id: 9,
     nom: "Moulin",
     profit: 0,
     impact_ecologique: -100,
@@ -139,6 +148,7 @@ const datas = [
     production: 0,
   },
   {
+    id: 10,
     nom: "Usine de Pastis",
     profit: 8600,
     impact_ecologique: 116,
@@ -147,13 +157,12 @@ const datas = [
     utilisation_sol: 55,
     image: usine,
     categorie: "Usine",
-
     cout_achat: 213200,
-
     superficie: "1hectar",
     production: 10,
   },
   {
+    id: 11,
     nom: "Champ de café",
     profit: 600,
     impact_ecologique: 94,
@@ -162,13 +171,12 @@ const datas = [
     utilisation_sol: 55,
     image: cafe,
     categorie: "Champ",
-
     cout_achat: 73690,
-
     superficie: "1hectar",
     production: 7,
   },
   {
+    id: 12,
     nom: "Usine de Plat cuisiné",
     profit: 1500,
     impact_ecologique: 3273,
@@ -177,12 +185,12 @@ const datas = [
     utilisation_sol: 55,
     image: platCuisiné,
     categorie: "Usine",
-
     cout_achat: 220000,
     superficie: "1hectar",
     production: 100,
   },
   {
+    id: 13,
     nom: "Champ de blé",
     profit: 8500,
     impact_ecologique: 87,
@@ -192,11 +200,11 @@ const datas = [
     image: ble,
     categorie: "Champ",
     cout_achat: 105720,
-
     superficie: "1hectar",
     production: 640,
   },
   {
+    id: 14,
     nom: "Usine de nouilles asiatiques",
     profit: 2000,
     impact_ecologique: 117,
@@ -210,6 +218,7 @@ const datas = [
     production: 1268,
   },
   {
+    id: 15,
     nom: "Usine de glace à l'eau",
     profit: 5700,
     impact_ecologique: 237,
@@ -223,6 +232,7 @@ const datas = [
     production: 13,
   },
   {
+    id: 16,
     nom: "Ferme à Moules",
     profit: 6300,
     impact_ecologique: 524,
@@ -236,6 +246,7 @@ const datas = [
     production: 19,
   },
   {
+    id: 17,
     nom: "Champ d'ail",
     profit: 800,
     impact_ecologique: 37,
@@ -250,6 +261,7 @@ const datas = [
   },
 
   {
+    id: 18,
     nom: "Usine de liqueur",
     profit: 7800,
     impact_ecologique: 25,
