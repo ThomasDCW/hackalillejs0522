@@ -6,13 +6,9 @@ import vache from "@assets/vache.png";
 import arbre from "@assets/arbre.png";
 
 export default styled.header`
-  text-align: center;
   height: 6vh;
   background-color: #585ad4;
-  img {
-    height: 100%;
-    margin-top: -6rem;
-  }
+  display: flex;
   .bg {
     background-repeat: no-repeat;
     background-size: 100%;
@@ -34,20 +30,13 @@ export default styled.header`
   }
 
   .catFiltre {
-    height: 5vh;
-    width: 30vw;
+    height: 100%;
+    width: 45vw;
     margin-left: 2rem;
-    display: flex;
-    justify-content: center;
     button {
       aspect-ratio: 1/1;
-      height: 3.5rem;
+      height: 100%;
       border-radius: 50%;
-      //margin-top: 1rem;
-      img {
-        //margin-top: -0.05rem;
-        //margin-left: -0.25rem;
-      }
     }
   }
   @media screen and (max-width: 600px) {
