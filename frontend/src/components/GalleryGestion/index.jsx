@@ -8,7 +8,6 @@ import Upgrade from "@components/Upgrade";
 
 export default function Gallery() {
   const { investissement, setInvestissement } = useContext(statsContext);
-  console.log(investissement);
   return (
     <SGallery>
       {datas

@@ -23,7 +23,6 @@ export default function CardAchat(props) {
   } = useContext(statsContext);
 
   const [selected, isSelected] = useState(false);
-  console.log(selected);
 
   //========  €  =======//
   const deIncrementMoney = () => {
