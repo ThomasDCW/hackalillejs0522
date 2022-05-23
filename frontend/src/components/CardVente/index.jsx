@@ -8,32 +8,11 @@ export default function CardVente(props) {
   const {
     money,
     setMoney,
-    timerActive,
-    earth,
-    setEarth,
     annualProfit,
     setAnnualProfit,
-    eau,
-    setEau,
-    sol,
-    setSol,
-    energie,
-    setEnergie,
     investissement,
     setInvestissement,
   } = useContext(statsContext);
-
-  //========  actualisation chaque année  ========//
-  useInterval(() => {
-    if (timerActive) setMoney(money + props.profit);
-  }, 5000);
-
-  useInterval(() => {
-    if (annualProfit > 1) {
-      return annualProfit;
-    }
-    if (timerActive) setAnnualProfit(props.profit);
-  }, 5000);
 
   //========  €  =======//
   const deIncrementMoney = () => {

@@ -1,10 +1,16 @@
 import { createContext, useState } from "react";
 import useInterval from "./useInterval";
-import imgEarth1 from "../../assets/terre1.png";
-import imgEarth2 from "../../assets/terre2.png";
-import imgEarth3 from "../../assets/terre3.png";
-import imgEarth4 from "../../assets/terre4.png";
-import imgEarth5 from "../../assets/terre5.png";
+import imgEarth1 from "../../assets/Compte/Vide.png";
+import imgEarth2 from "../../assets/Compte/earth-1.png";
+import imgEarth3 from "../../assets/Compte/earth-2.png";
+import imgEarth4 from "../../assets/Compte/earth-3.png";
+import imgEarth5 from "../../assets/Compte/earth-4.png";
+import imgEarth6 from "../../assets/Compte/earth-5.png";
+import imgEarth7 from "../../assets/Compte/earth-6.png";
+import imgEarth8 from "../../assets/Compte/earth-7.png";
+import imgEarth9 from "../../assets/Compte/earth-8.png";
+import imgEarth10 from "../../assets/Compte/earth-9.png";
+import imgEarth11 from "../../assets/Compte/earth-10.png";
 
 const statsContext = createContext();
 export default statsContext;
@@ -32,7 +38,7 @@ export function StatsContext({ children }) {
     setTimer(0);
   };
 
-  const defineImg = () => {
+  const defineImgEarth = () => {
     if (earth < 1000) {
       return <img src={imgEarth1} />;
     } else if (earth > 1000 && earth < 1999) {
@@ -43,6 +49,18 @@ export function StatsContext({ children }) {
       return <img src={imgEarth4} />;
     } else if (earth > 4000 && earth < 4999) {
       return <img src={imgEarth5} />;
+    } else if (earth > 5000 && earth < 5999) {
+      return <img src={imgEarth6} />;
+    } else if (earth > 6000 && earth < 6999) {
+      return <img src={imgEarth7} />;
+    } else if (earth > 7000 && earth < 7999) {
+      return <img src={imgEarth8} />;
+    } else if (earth > 8000 && earth < 8999) {
+      return <img src={imgEarth9} />;
+    } else if (earth > 9000 && earth < 9999) {
+      return <img src={imgEarth10} />;
+    } else if (earth > 10000 && earth < 10999) {
+      return <img src={imgEarth11} />;
     }
   };
 
@@ -70,7 +88,7 @@ export function StatsContext({ children }) {
         setAnnualProfit,
         earth,
         setEarth,
-        defineImg,
+        defineImgEarth,
         endGameFunc,
         modal,
         setModal,

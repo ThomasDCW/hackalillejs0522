@@ -6,7 +6,7 @@ export default styled.div`
   flex-wrap: wrap;
   width: 20vw;
   flex-direction: column;
-  margin-left: 60vw;
+  margin-left: 50vw;
   height: 20vh;
   .money {
     color: #ffe100;
@@ -24,29 +24,12 @@ export default styled.div`
     justify-content: space-around;
   }
   .earth {
-    color: #ffffff;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px #000000;
-    font-weight: bold;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    padding-bottom: 3vh;
-    height: 6vh;
     img {
-      aspect-ratio: 1/1;
-      width: 25%;
-      position: absolute;
-      z-index: -1;
+      width: 100%;
+      height: 100%;
     }
   }
   .eau {
-    background-color: red;
-    height: 3vh;
   }
   @media screen and (max-width: 600px) {
     .money {
