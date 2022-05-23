@@ -11,7 +11,7 @@ export default function Wallet() {
         {defineImg()}
         {earth}
       </div>
-      <div className="money">{money}€</div>
+      <div className="money">{money.toFixed(2)}€</div>
     </SCounter>
   );
 }

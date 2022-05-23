@@ -40,6 +40,9 @@ export default function Card(props) {
   const incrementAnnualProfit = () => {
     setAnnualProfit(annualProfit + props.profit);
   };
+  const deIncrementAnnualProfit = () => {
+    setAnnualProfit(annualProfit - props.profit);
+  };
 
   const incrementEarth = () => {
     setEarth(earth - props.impact_ecologique);
@@ -68,6 +71,7 @@ export default function Card(props) {
               }
               incrementMoney();
               incrementEarth();
+              deIncrementAnnualProfit();
               setNb(nb - 1);
             }}
           >
@@ -78,7 +82,6 @@ export default function Card(props) {
             onClick={() => {
               deIncrementMoney();
               incrementAnnualProfit();
-
               deIncrementEarth();
               setNb(nb + 1);
             }}

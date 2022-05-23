@@ -26,7 +26,6 @@ export function StatsContext({ children }) {
 
   const reset = () => {
     setTimerActive(false);
-    setTimer(0);
   };
 
   const defineImg = () => {
