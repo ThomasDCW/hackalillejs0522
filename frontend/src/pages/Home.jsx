@@ -1,5 +1,4 @@
 import Start from "@components/Start";
-import Stop from "@components/Stop";
 import { Link } from "react-router-dom";
 import SHome from "./style";
 
