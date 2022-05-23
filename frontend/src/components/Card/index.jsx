@@ -21,30 +21,32 @@ export default function Card(props) {
     setEnergie,
   } = useContext(statsContext);
 
+  const [nb, setNb] = useState(0);
+
   //========  actualisation chaque année  ========//
   useInterval(() => {
-    if (timerActive) setMoney(money + props.profit);
+    if (timerActive) setMoney(money + props.profit * nb);
   }, 5000);
 
   useInterval(() => {
     if (annualProfit > 1) {
       return annualProfit;
     }
-    if (timerActive) setAnnualProfit(props.profit);
+    if (timerActive) setAnnualProfit(props.profit * nb);
   }, 5000);
 
   //========  actualisation chaque année des stats  ========//
   useInterval(() => {
-    if (timerActive) setEarth(earth + props.impact_ecologique);
+    if (timerActive) setEarth(earth + props.impact_ecologique * nb);
   }, 5000);
   useInterval(() => {
-    if (timerActive) setEau(eau + props.consommation_eau);
+    if (timerActive) setEau(eau + props.consommation_eau * nb);
   }, 5000);
   useInterval(() => {
-    if (timerActive) setEnergie(energie + props.consommation_energetique);
+    if (timerActive) setEnergie(energie + props.consommation_energetique * nb);
   }, 5000);
   useInterval(() => {
-    if (timerActive) setSol(sol + props.utilisation_sol);
+    if (timerActive) setSol(sol + props.utilisation_sol * nb);
   }, 5000);
 
   return (
@@ -92,6 +94,7 @@ export default function Card(props) {
       </table>
       {props.upgrade}
       {props.buttonAchat}
+      <h2>{nb}</h2>
       <img src={props.image} alt="img" />
       {props.buttonVente}
     </SCard>
