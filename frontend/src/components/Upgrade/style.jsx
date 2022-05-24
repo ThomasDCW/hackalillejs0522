@@ -13,6 +13,8 @@ export default styled.div`
     border: 3px solid #fbb7a2;
     .five {
       background-color: red;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
       width: 100%;
       height: 2.8rem;
       display: flex;
@@ -20,9 +22,10 @@ export default styled.div`
       .cube {
         aspect-ratio: 1/1;
         width: 14%;
-        background-color: black;
+        background-color: #ffffff;
         margin: 0.2rem;
         border: none;
+        border-radius: 0.2rem;
       }
     }
     .up {

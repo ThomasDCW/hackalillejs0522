@@ -12,9 +12,9 @@ export default function Gallery() {
     <SGallery>
       {datas
         //revoir le filtre(pas bon)
-        .filter((data) => {
+        /*.filter((data) => {
           data.id === investissement;
-        })
+        })*/
         .map((data) => {
           return (
             <Card

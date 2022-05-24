@@ -39,8 +39,8 @@ export default styled.section`
   .myButton {
     margin-top: 8vh;
     box-shadow: 3px 4px 0px 0px #070707;
-    background: linear-gradient(to bottom, #585ad4 5%, #378de5 100%);
-    background-color: #585ad4;
+    background: linear-gradient(to bottom, #00487d 5%, #378de5 100%);
+    background-color: #00487d;
 
     border: 1px solid #337bc4;
     display: inline-block;
@@ -51,7 +51,7 @@ export default styled.section`
 
     padding: 2rem 4rem;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #585ad4;
+    text-shadow: 0px 1px 0px #00487d;
   }
 
   .myButton:active {

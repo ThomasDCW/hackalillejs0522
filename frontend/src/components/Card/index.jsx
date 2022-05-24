@@ -37,6 +37,7 @@ export default function Card(props) {
 
   //========  actualisation chaque année des stats  ========//
   useInterval(() => {
+    //rajouter (timerActive 11)
     if (timerActive) setEarth(earth + props.impact_ecologique * nb);
   }, 5000);
   useInterval(() => {

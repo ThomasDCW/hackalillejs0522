@@ -2,7 +2,7 @@ import SUpgrade from "./style";
 
 export default function Upgrade(props) {
   const showPlusStats = () => {
-    return props.profit * 1, 20;
+    props.profit * 1, 20;
   };
 
   return (
