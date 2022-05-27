@@ -6,7 +6,7 @@ export default styled.div`
   width: 20rem;
   background-color: white;
   box-sizing: border-box;
-  border: 10px solid #585ad4;
+  border: 10px solid #00487d;
   box-shadow: 19px 16px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ export default styled.div`
   table {
     background-color: #d7d6d6;
     th {
-      border: 1px solid #585ad4;
+      border: 1px solid #00487d;
     }
   }
   .qte {
@@ -64,7 +64,7 @@ export default styled.div`
     font-weight: bold;
   }
   h2 {
-    text-shadow: 2px 2px 2px #fbb7a2;
+    text-shadow: 2px 2px 2px #00487d;
     text-align: center;
     font-size: 28px;
     font-weight: bold;

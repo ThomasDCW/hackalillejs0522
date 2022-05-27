@@ -6,7 +6,7 @@ export default styled.div`
   text-shadow: 4px 0px 0px #fafafa;
   position: fixed;
   height: 23%;
-  margin-left: 45vw;
+  margin-left: 10vw;
   display: flex;
   align-items: center;
   .timer {

@@ -8,7 +8,6 @@ export default function CardAchat(props) {
   const {
     money,
     setMoney,
-    timerActive,
     earth,
     setEarth,
     annualProfit,
@@ -23,26 +22,7 @@ export default function CardAchat(props) {
     setInvestissement,
   } = useContext(statsContext);
 
-  const [nb, setNb] = useState(0);
-  //========  actualisation chaque année  ========//
-  useInterval(() => {
-    if (timerActive) setMoney(money + props.profit * nb);
-  }, 5000);
-
-  useInterval(() => {
-    if (annualProfit > 1) {
-      return annualProfit;
-    }
-    if (timerActive) setAnnualProfit(props.profit * nb);
-  }, 5000);
-
-  //========  actualisation chaque année des stats  ========//
-  useInterval(() => {
-    if (timerActive) setEarth(earth + props.impact_ecologique * nb);
-    setEau(eau + props.consommation_eau * nb);
-    setEnergie(energie + props.consommation_energetique * nb);
-    setSol(sol + props.utilisation_sol * nb);
-  }, 5000);
+  const [selected, isSelected] = useState(false);
 
   //========  €  =======//
   const deIncrementMoney = () => {
@@ -52,10 +32,7 @@ export default function CardAchat(props) {
   const incrementAnnualProfit = () => {
     setAnnualProfit(annualProfit + props.profit);
   };
-  const deincrementAnnualProfit = () => {
-    setAnnualProfit(annualProfit - props.profit);
-  };
-  const deIncrementEarth = () => {
+  const incrementEarth = () => {
     setEarth(earth + props.impact_ecologique);
   };
   //Incremente l'Eau//
@@ -85,12 +62,12 @@ export default function CardAchat(props) {
           onClick={() => {
             deIncrementMoney();
             incrementAnnualProfit();
-            deIncrementEarth();
-            setNb(nb + 1);
+            incrementEarth();
             incrementEau();
             incrementEnergie();
             incrementSol();
             incrementInvest();
+            isSelected(true);
           }}
         >
           Acheter pour <br />

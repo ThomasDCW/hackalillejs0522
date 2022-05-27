@@ -4,9 +4,9 @@ export default styled.div`
   position: fixed;
   display: flex;
   flex-wrap: wrap;
-  width: 20vw;
+  width: 80vw;
   flex-direction: column;
-  margin-left: 60vw;
+  margin-left: 35vw;
   height: 20vh;
   .money {
     color: #ffe100;
@@ -16,37 +16,28 @@ export default styled.div`
     background: url("src/assets/billet.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 35%;
+    background-size: 10%;
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-around;
+    margin-top: 3%;
   }
-  .earth {
-    color: #ffffff;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px #000000;
-    font-weight: bold;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  .stats {
+    width: 30vw;
+    height: 20vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    padding-bottom: 3vh;
-    height: 6vh;
-    img {
-      aspect-ratio: 1/1;
-      width: 25%;
-      position: absolute;
-      z-index: -1;
+    flex-direction: column;
+    .elem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 25%;
+      img {
+        width: 40%;
+        height: 150%;
+      }
     }
-  }
-  .eau {
-    background-color: red;
-    height: 3vh;
   }
   @media screen and (max-width: 600px) {
     .money {

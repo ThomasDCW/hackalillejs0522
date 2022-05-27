@@ -8,9 +8,6 @@ export default function Header() {
   const { choice, setChoice } = useContext(statsContext);
   return (
     <SHeader>
-      <div className="mainLogo">
-        <img src={logo} alt="logo" />
-      </div>
       <div className="displayButton">
         <Link to="/investissement">
           <button>Investissement</button>

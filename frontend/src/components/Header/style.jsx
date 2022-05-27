@@ -7,18 +7,21 @@ import arbre from "@assets/arbre.png";
 
 export default styled.header`
   height: 7vh;
-  background-color: #585ad4;
+  background-color: #00487d;
   display: flex;
-  img {
-    margin-left: 2rem;
-    width: 65%;
-  }
   .displayButton {
-    width: 80vw;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     button {
       width: 20vw;
+      height: 5vh;
+      border: none;
+      box-shadow: 8px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: #c3c4cd;
     }
   }
 

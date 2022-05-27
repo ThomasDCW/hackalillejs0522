@@ -19,11 +19,10 @@ export default function Card(props) {
     setSol,
     energie,
     setEnergie,
-    investissement,
-    setInvestissement,
   } = useContext(statsContext);
 
   const [nb, setNb] = useState(0);
+
   //========  actualisation chaque année  ========//
   useInterval(() => {
     if (timerActive) setMoney(money + props.profit * nb);
@@ -38,10 +37,17 @@ export default function Card(props) {
 
   //========  actualisation chaque année des stats  ========//
   useInterval(() => {
+    //rajouter (timerActive 11)
     if (timerActive) setEarth(earth + props.impact_ecologique * nb);
-    setEau(eau + props.consommation_eau * nb);
-    setEnergie(energie + props.consommation_energetique * nb);
-    setSol(sol + props.utilisation_sol * nb);
+  }, 5000);
+  useInterval(() => {
+    if (timerActive) setEau(eau + props.consommation_eau * nb);
+  }, 5000);
+  useInterval(() => {
+    if (timerActive) setEnergie(energie + props.consommation_energetique * nb);
+  }, 5000);
+  useInterval(() => {
+    if (timerActive) setSol(sol + props.utilisation_sol * nb);
   }, 5000);
 
   return (
