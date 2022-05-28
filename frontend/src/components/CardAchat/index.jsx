@@ -20,6 +20,8 @@ export default function CardAchat(props) {
     setEnergie,
     investissement,
     setInvestissement,
+    quantity,
+    setQuantity,
   } = useContext(statsContext);
 
   const [selected, isSelected] = useState(false);
@@ -54,6 +56,10 @@ export default function CardAchat(props) {
     setInvestissement([...investissement, props.id]);
   };
 
+  const incrementQuantity = () => {
+    setQuantity(quantity + 1);
+  };
+
   return (
     <SCard>
       <div className="center">
@@ -68,6 +74,7 @@ export default function CardAchat(props) {
             incrementSol();
             incrementInvest();
             isSelected(true);
+            incrementQuantity();
           }}
         >
           Acheter pour <br />

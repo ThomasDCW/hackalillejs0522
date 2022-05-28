@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import assetsDatas from "@assets/data";
 import useInterval from "./useInterval";
 import imgVide from "../../assets/Compte/Vide.png";
 import imgEarth2 from "../../assets/Compte/earth-1.png";
@@ -58,6 +59,7 @@ export function StatsContext({ children }) {
   const [modal, setModal] = useState(false);
   const [endGame, setEndGame] = useState(false);
   const [investissement, setInvestissement] = useState([]);
+  const [quantity, setQuantity] = useState(0);
 
   useInterval(() => {
     if (timerActive) setTimer((prevState) => prevState + 1);
@@ -208,6 +210,8 @@ export function StatsContext({ children }) {
         setSol,
         investissement,
         setInvestissement,
+        quantity,
+        setQuantity,
       }}
     >
       {children}
