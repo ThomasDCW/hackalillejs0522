@@ -1,12 +1,14 @@
+import logo from "../../assets/logoBigBill1.png";
 import styled from "styled-components";
 
 export default styled.header`
-  text-align: center;
   background-color: #585ad4;
+  background-image: url(${logo});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: fixed;
   bottom: 0;
   width: 100vw;
-  img {
-    height: 2vh;
-  }
+  height: 2vh;
 `;

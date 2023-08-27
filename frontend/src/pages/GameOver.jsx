@@ -1,20 +1,26 @@
 import SGameOver from "./style";
-import gameover from "../assets/gameover.png";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import statsContext from "../services/contexts/index";
 
 export default function GameOver() {
+  const { setTimer, setMoney } = useContext(statsContext);
   return (
     <>
       <SGameOver>
-        <div className="stop">
-          <a href="https://climate.selectra.com/fr/actualites/rapport-giec-2022">
-            Rapport de la GIEC
-          </a>
-          <a href="https://agribalyse.ademe.fr/">Agribalyse</a>
+        <ul className="stop">
+          <li>
+            <a href="https://climate.selectra.com/fr/actualites/rapport-giec-2022">
+              Rapport du GIEC
+            </a>
+          </li>
+          <li>
+            <a href="https://agribalyse.ademe.fr/">Agribalyse</a>
+          </li>
           <Link to="/">
-            <button className="myButton">RETOUR</button>
+            <button className="myButton">ACCUEIL</button>
           </Link>
-        </div>
+        </ul>
       </SGameOver>
     </>
   );
